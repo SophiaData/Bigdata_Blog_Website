@@ -17,7 +17,7 @@ jobs:
         with:
           paths: Bigdata_Blog
           node-version: 18
-          cache: yarn --file Bigdata_Blog/yarn.lock
+          cache: yarn
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile

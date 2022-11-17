@@ -19,9 +19,9 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile ./Bigdata_Blog
+        run: yarn install --frozen-lockfile
       - name: Build website
-        run: yarn build ./Bigdata_Blog
+        run: yarn build
 
       # 部署到 GitHub Pages 的热门选择：
       # 文档：https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus

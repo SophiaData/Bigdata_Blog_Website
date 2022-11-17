@@ -16,9 +16,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
+          cache: yarn --file Bigdata_Blog/yarn.lock
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile ./Bigdata_Blog
+        run: yarn install --frozen-lockfile
       - name: Test build website
-        run: yarn build ./Bigdata_Blog
+        run: yarn build

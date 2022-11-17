@@ -9,6 +9,10 @@ jobs:
   test-deploy:
     name: Test deployment
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: Bigdata_Blog_Website
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3

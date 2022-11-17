@@ -4,8 +4,6 @@ on:
   pull_request:
     branches:
       - master
-    # 如果你想要进一步定义触发条件、路径等，可以查看文档
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
   test-deploy:
@@ -15,11 +13,10 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
         with:
-          cache-dependency-path: Bigdata_Blog
           node-version: 18
           cache: yarn
 
       - name: Install dependencies
-        run: cd Bigdata_Blog && yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile
       - name: Test build website
-        run: cd Bigdata_Blog && yarn build
+        run: yarn build

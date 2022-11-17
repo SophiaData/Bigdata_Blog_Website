@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
-      - paths: Bigdata_Blog
         with:
+          paths: Bigdata_Blog
           node-version: 18
           cache: yarn --file Bigdata_Blog/yarn.lock
 

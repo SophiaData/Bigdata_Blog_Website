@@ -15,11 +15,11 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
         with:
-          cache-dependency-path: Bigdata_Blog
+          path: Bigdata_Blog
           node-version: 18
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --file Bigdata_Blog
+        run: cd Bigdata_Blog && yarn install --frozen-lockfile
       - name: Test build website
-        run: yarn build --file Bigdata_Blog
+        run: cd Bigdata_Blog && yarn build

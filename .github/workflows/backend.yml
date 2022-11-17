@@ -9,10 +9,15 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: Bigdata_Blog_Website
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
         with:
+          cache-dependency-path: .
           node-version: 18
           cache: yarn
 

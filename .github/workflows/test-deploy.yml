@@ -20,6 +20,6 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile --file Bigdata_Blog
       - name: Test build website
-        run: yarn build
+        run: yarn build --file Bigdata_Blog

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[7451],{2691:a=>{a.exports=JSON.parse('{"label":"facebook","permalink":"/Bigdata_Blog_Website/blog/tags/facebook","allTagsPath":"/Bigdata_Blog_Website/blog/tags","count":1}')}}]);

@@ -9,7 +9,7 @@ const config = {
   title: 'Bigdata-Blog',
   tagline: '大数据入门及相关资料',
   url: 'https://sophiadata.github.io',
-  baseUrl: '/bigdata-blog/',
+  baseUrl: '/Bigdata_Blog_Website/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

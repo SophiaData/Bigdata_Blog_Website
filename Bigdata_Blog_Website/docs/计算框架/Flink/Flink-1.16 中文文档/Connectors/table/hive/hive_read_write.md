@@ -162,7 +162,7 @@ Flink 允许你灵活的配置并发推断策略。你可以在 `TableConfig` �
         <td><h5>table.exec.hive.split-max-size</h5></td>
         <td style="word-wrap: break-word;">128mb</td>
         <td>MemorySize</td>
-        <td>读 Hive 表时，每个分片最大可以包含的字节数 (默认是 128MB) 
+        <td>读 Hive 表时，每个分片最大可以包含的字节数 (默认是 128MB)</td>> 
     </tr>
     <tr>
         <td><h5>table.exec.hive.file-open-cost</h5></td>

@@ -199,6 +199,7 @@ available metadata fields.
       <td>缓存刷新的间隔时间，超过该时间后异步线程将刷新缓存数据。当 sink 收到很多同 key 上的更新时，缓存将保留同 key 的最后一条记录，因此 sink 缓存能帮助减少发往 Kafka topic 的数据量，以及避免发送潜在的 tombstone 消息。
         可以通过设置为 '0' 来禁用它。默认，该选项是未开启的。注意，如果要开启 sink 缓存，需要同时设置 <code>'sink.buffer-flush.max-rows'</code>
         和 <code>'sink.buffer-flush.interval'</code> 两个选项为大于零的值。</td>
+    </tr>>
     </tbody>
 </table>
 

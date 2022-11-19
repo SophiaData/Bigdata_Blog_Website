@@ -1,3 +1,11 @@
+---
+title: Kubernetes 设置
+weight: 5
+type: docs
+aliases:
+- /zh/deployment/resource-providers/standalone/kubernetes.html
+- /zh/ops/deployment/kubernetes.html
+---
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -31,9 +39,7 @@ under the License.
 
 ### 介绍
 
-本文描述了如何使用 Flink standalone 部署模式在 Kubernetes 上部署 [standalone]({{< ref "
-docs/deployment/resource-providers/standalone/overview" >}}) 模式的 Flink 集群。通常我们建议新用户使用 [native Kubernetes 部署]({{< ref "
-docs/deployment/resource-providers/native_kubernetes" >}})模式在 Kubernetes上部署 Flink。
+本文描述了如何使用 Flink standalone 部署模式在 Kubernetes 上部署 [standalone]({{< ref "docs/deployment/resource-providers/standalone/overview" >}}) 模式的 Flink 集群。通常我们建议新用户使用 [native Kubernetes 部署]({{< ref "docs/deployment/resource-providers/native_kubernetes" >}})模式在 Kubernetes上部署 Flink。
 
 <a name="preparation"></a>
 
@@ -43,15 +49,15 @@ docs/deployment/resource-providers/native_kubernetes" >}})模式在 Kubernetes�
 
 如果你想在本地运行 Kubernetes，建议使用 [MiniKube](https://minikube.sigs.k8s.io/docs/start/)。
 
-{{< hint info >}} 如果使用 MiniKube，请确保在部署 Flink 集群之前先执行 `minikube ssh 'sudo ip link set docker0 promisc on'`，否则 Flink
-组件不能自动地将自己映射到 Kubernetes Service 中。 {{< /hint >}}
+{{< hint info >}}
+如果使用 MiniKube，请确保在部署 Flink 集群之前先执行 `minikube ssh 'sudo ip link set docker0 promisc on'`，否则 Flink 组件不能自动地将自己映射到 Kubernetes Service 中。
+{{< /hint >}}
 
 <a name="starting-a-kubernetes-cluster-session-mode"></a>
 
 ### Kubernetes 上的 Flink session 集群
 
-*Flink session 集群* 是以一种长期运行的 Kubernetes Deployment 形式执行的。你可以在一个 *session 集群* 上运行多个 Flink 作业。当然，只有 session
-集群部署好以后才可以在上面提交 Flink 作业。
+*Flink session 集群* 是以一种长期运行的 Kubernetes Deployment 形式执行的。你可以在一个 *session 集群* 上运行多个 Flink 作业。当然，只有 session 集群部署好以后才可以在上面提交 Flink 作业。
 
 在 Kubernetes 上部署一个基本的 *Flink session 集群* 时，一般包括下面三个组件：
 
@@ -75,7 +81,6 @@ docs/deployment/resource-providers/native_kubernetes" >}})模式在 Kubernetes�
 1. 运行 `kubectl port-forward ${flink-jobmanager-pod} 8081:8081` 将 jobmanager 的 web ui 端口映射到本地 8081。
 2. 在浏览器中导航到 [http://localhost:8081](http://localhost:8081) 页面。
 3. 此外，也可以使用如下命令向集群提交作业：
-
 ```bash
 $ ./bin/flink run -m localhost:8081 ./examples/streaming/TopSpeedWindowing.jar
 ```
@@ -109,17 +114,11 @@ $ ./bin/flink run -m localhost:8081 ./examples/streaming/TopSpeedWindowing.jar
 
 检查 [Application 集群资源定义](#application-cluster-resource-definitions) 并做出相应的调整：
 
-`jobmanager-job.yaml` 中的 `args` 属性必须指定用户作业的主类。也可以参考[如何设置 JobManager 参数]({{< ref "
-docs/deployment/resource-providers/standalone/docker" >}}#jobmanager-additional-command-line-arguments)来了解如何将额外的 `args`
-传递给 `jobmanager-job.yaml` 配置中指定的 Flink 镜像。
+`jobmanager-job.yaml` 中的 `args` 属性必须指定用户作业的主类。也可以参考[如何设置 JobManager 参数]({{< ref "docs/deployment/resource-providers/standalone/docker" >}}#jobmanager-additional-command-line-arguments)来了解如何将额外的 `args` 传递给 `jobmanager-job.yaml` 配置中指定的 Flink 镜像。
 
-*job artifacts* 参数必须可以从 [资源定义示例](#application-cluster-resource-definitions) 中的 `job-artifacts-volume` 处获取。假如是在 minikube
-集群中创建这些组件，那么定义示例中的 job-artifacts-volume 可以挂载为主机的本地目录。如果不使用 minikube 集群，那么可以使用 Kubernetes 集群中任何其它可用类型的 volume 来提供 *job
-artifacts*。此外，还可以构建一个已经包含 *job artifacts* 参数的[自定义镜像]({{< ref "docs/deployment/resource-providers/standalone/docker" >
-}}#advanced-customization)。
+*job artifacts* 参数必须可以从 [资源定义示例](#application-cluster-resource-definitions) 中的 `job-artifacts-volume` 处获取。假如是在 minikube 集群中创建这些组件，那么定义示例中的 job-artifacts-volume 可以挂载为主机的本地目录。如果不使用 minikube 集群，那么可以使用 Kubernetes 集群中任何其它可用类型的 volume 来提供 *job artifacts*。此外，还可以构建一个已经包含 *job artifacts* 参数的[自定义镜像]({{< ref "docs/deployment/resource-providers/standalone/docker" >}}#advanced-customization)。
 
-在创建[通用集群组件](#common-cluster-resource-definitions)后，指定 [Application 集群资源定义](#application-cluster-resource-definitions)
-文件，执行 `kubectl` 命令来启动 Flink Application 集群：
+在创建[通用集群组件](#common-cluster-resource-definitions)后，指定 [Application 集群资源定义](#application-cluster-resource-definitions)文件，执行 `kubectl` 命令来启动 Flink Application 集群：
 
 ```sh
     $ kubectl create -f jobmanager-job.yaml
@@ -155,8 +154,7 @@ artifacts*。此外，还可以构建一个已经包含 *job artifacts* 参数�
 
 ### Configuration
 
-所有配置项都展示在[配置页面]({{< ref "docs/deployment/config" >}})上。在 config map 配置文件 `flink-configuration-configmap.yaml`
-中，可以将配置添加在 `flink-conf.yaml` 部分。
+所有配置项都展示在[配置页面]({{< ref "docs/deployment/config" >}})上。在 config map 配置文件 `flink-configuration-configmap.yaml` 中，可以将配置添加在 `flink-conf.yaml` 部分。
 
 <a name="accessing-flink-in-kubernetes"></a>
 
@@ -164,31 +162,30 @@ artifacts*。此外，还可以构建一个已经包含 *job artifacts* 参数�
 
 接下来可以访问 Flink UI 页面并通过不同的方式提交作业：
 
-* `kubectl proxy`:
+*  `kubectl proxy`:
 
     1. 在终端运行 `kubectl proxy` 命令。
-    2.
-    在浏览器中导航到 [http://localhost:8001/api/v1/namespaces/default/services/flink-jobmanager:webui/proxy](http://localhost:8001/api/v1/namespaces/default/services/flink-jobmanager:webui/proxy)。
+    2. 在浏览器中导航到 [http://localhost:8001/api/v1/namespaces/default/services/flink-jobmanager:webui/proxy](http://localhost:8001/api/v1/namespaces/default/services/flink-jobmanager:webui/proxy)。
 
-* `kubectl port-forward`:
+*  `kubectl port-forward`:
     1. 运行 `kubectl port-forward ${flink-jobmanager-pod} 8081:8081` 将 jobmanager 的 web ui 端口映射到本地的 8081。
     2. 在浏览器中导航到 [http://localhost:8081](http://localhost:8081)。
     3. 此外，也可以使用如下命令向集群提交作业：
-   ```bash
-   $ ./bin/flink run -m localhost:8081 ./examples/streaming/TopSpeedWindowing.jar
-   ```
+    ```bash
+    $ ./bin/flink run -m localhost:8081 ./examples/streaming/TopSpeedWindowing.jar
+    ```
 
-* 基于 jobmanager 的 rest 服务上创建 `NodePort` service：
-    1. 运行 `kubectl create -f jobmanager-rest-service.yaml` 来基于 jobmanager 创建 `NodePort`
-       service。`jobmanager-rest-service.yaml` 的示例文件可以在 [附录](#common-cluster-resource-definitions) 中找到。
-    2. 运行 `kubectl get svc flink-jobmanager-rest` 来查询 server 的 `node-port`
-       ，然后再浏览器导航到 [http://&lt;public-node-ip&gt;:&lt;node-port&gt;](http://<public-node-ip>:<node-port>)。
+*  基于 jobmanager 的 rest 服务上创建 `NodePort` service：
+    1. 运行 `kubectl create -f jobmanager-rest-service.yaml` 来基于 jobmanager 创建 `NodePort` service。`jobmanager-rest-service.yaml` 的示例文件可以在 [附录](#common-cluster-resource-definitions) 中找到。
+    2. 运行 `kubectl get svc flink-jobmanager-rest` 来查询 server 的 `node-port`，然后再浏览器导航到 [http://&lt;public-node-ip&gt;:&lt;node-port&gt;](http://<public-node-ip>:<node-port>)。
     3. 如果使用 minikube 集群，可以执行 `minikube ip` 命令来查看 public ip。
     4. 与 `port-forward` 方案类似，也可以使用如下命令向集群提交作业。
 
-   ```bash
-   $ ./bin/flink run -m <public-node-ip>:<node-port> ./examples/streaming/TopSpeedWindowing.jar
-   ```
+    ```bash
+    $ ./bin/flink run -m <public-node-ip>:<node-port> ./examples/streaming/TopSpeedWindowing.jar
+    ```
+
+
 
 <a name="debugging-and-log-access"></a>
 
@@ -218,12 +215,9 @@ flink-taskmanager-64847444ff-nnd6m   1/1     Running            3          3m28s
 
 #### Kubernetes 高可用 Services
 
-Session 模式和 Application 模式集群都支持使用 [Kubernetes 高可用服务]({{< ref "docs/deployment/ha/kubernetes_ha" >}})
-。需要在 [flink-configuration-configmap.yaml](#common-cluster-resource-definitions) 中添加如下 Flink 配置项。
+Session 模式和 Application 模式集群都支持使用 [Kubernetes 高可用服务]({{< ref "docs/deployment/ha/kubernetes_ha" >}})。需要在 [flink-configuration-configmap.yaml](#common-cluster-resource-definitions) 中添加如下 Flink 配置项。
 
-<span class="label label-info">Note</span> 配置了 HA 存储目录相对应的文件系统必须在运行时可用。请参阅[自定义Flink 镜像]({{< ref "
-docs/deployment/resource-providers/standalone/docker" >}}#advanced-customization)和[启用文件系统插件]({{< ref "
-docs/deployment/resource-providers/standalone/docker" >}}#using-filesystem-plugins)获取更多相关信息。
+<span class="label label-info">Note</span> 配置了 HA 存储目录相对应的文件系统必须在运行时可用。请参阅[自定义Flink 镜像]({{< ref "docs/deployment/resource-providers/standalone/docker" >}}#advanced-customization)和[启用文件系统插件]({{< ref "docs/deployment/resource-providers/standalone/docker" >}}#using-filesystem-plugins)获取更多相关信息。
 
 ```yaml
 apiVersion: v1
@@ -235,26 +229,23 @@ metadata:
 data:
   flink-conf.yaml: |+
   ...
-  kubernetes.cluster-id: <cluster-id>
-  high-availability: kubernetes
-  high-availability.storageDir: hdfs:///flink/recovery
-  restart-strategy: fixed-delay
-  restart-strategy.fixed-delay.attempts: 10
+    kubernetes.cluster-id: <cluster-id>
+    high-availability.type: kubernetes
+    high-availability.storageDir: hdfs:///flink/recovery
+    restart-strategy.type: fixed-delay
+    restart-strategy.fixed-delay.attempts: 10
   ...
 ```
 
-此外，你必须使用具有创建、编辑、删除 ConfigMap 权限的 service 账号启动 JobManager 和 TaskManager
-pod。请查看[如何为 pod 配置 service 账号](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)获取更多信息。
+此外，你必须使用具有创建、编辑、删除 ConfigMap 权限的 service 账号启动 JobManager 和 TaskManager pod。请查看[如何为 pod 配置 service 账号](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)获取更多信息。
 
-当启用了高可用，Flink 会使用自己的 HA 服务进行服务发现。因此，JobManager Pod 会使用 IP 地址而不是 Kubernetes 的 service 名称来作为 `jobmanager.rpc.address`
-的配置项启动。完整配置请参考[附录](#appendix)。
+当启用了高可用，Flink 会使用自己的 HA 服务进行服务发现。因此，JobManager Pod 会使用 IP 地址而不是 Kubernetes 的 service 名称来作为 `jobmanager.rpc.address` 的配置项启动。完整配置请参考[附录](#appendix)。
 
 <a name="standby-jobManagers"></a>
 
-#### Standby JobManagers
+####  Standby JobManagers
 
-通常，只启动一个 JobManager pod 就足够了，因为一旦 pod 崩溃，Kubernetes 就会重新启动它。如果要实现更快的恢复，需要将 `jobmanager-session-deployment-ha.yaml`
-中的 `replicas` 配置 或 `jobmanager-application-ha.yaml` 中的 `parallelism` 配置设定为大于 `1` 的整型值来启动 Standby JobManagers。
+通常，只启动一个 JobManager pod 就足够了，因为一旦 pod 崩溃，Kubernetes 就会重新启动它。如果要实现更快的恢复，需要将 `jobmanager-session-deployment-ha.yaml` 中的 `replicas` 配置 或 `jobmanager-application-ha.yaml` 中的 `parallelism` 配置设定为大于 `1` 的整型值来启动 Standby JobManagers。
 
 <a name="enabling-queryable-state"></a>
 
@@ -262,26 +253,19 @@ pod。请查看[如何为 pod 配置 service 账号](https://kubernetes.io/docs/
 
 如果你为 TaskManager 创建了 `NodePort` service，那么你就可以访问 TaskManager 的 Queryable State 服务：
 
-1. 运行 `kubectl create -f taskmanager-query-state-service.yaml` 来为 `taskmanager` pod 创建 `NodePort`
-   service。`taskmanager-query-state-service.yaml` 的示例文件可以从[附录](#common-cluster-resource-definitions)中找到。
-2. 运行 `kubectl get svc flink-taskmanager-query-state` 来查询 service 对应 node-port
-   的端口号。然后你就可以创建 [QueryableStateClient(&lt;public-node-ip&gt;, &lt;node-port&gt;]({{< ref "
-   docs/dev/datastream/fault-tolerance/queryable_state" >}}#querying-state) 来提交状态查询。
+1. 运行 `kubectl create -f taskmanager-query-state-service.yaml` 来为 `taskmanager` pod 创建 `NodePort` service。`taskmanager-query-state-service.yaml` 的示例文件可以从[附录](#common-cluster-resource-definitions)中找到。
+2. 运行 `kubectl get svc flink-taskmanager-query-state` 来查询 service 对应 node-port 的端口号。然后你就可以创建 [QueryableStateClient(&lt;public-node-ip&gt;, &lt;node-port&gt;]({{< ref "docs/dev/datastream/fault-tolerance/queryable_state" >}}#querying-state) 来提交状态查询。
 
 <a name="using-standalone-kubernetes-with-reactive-mode"></a>
 
 ### 在 Reactive 模式下使用 Standalone Kubernetes
 
-[Reactive Mode]({{< ref "docs/deployment/elastic_scaling" >}}#reactive-mode) 允许在 *Application 集群* 始终根据可用资源调整作业并行度的模式下运行
-Flink。与 Kubernetes 结合使用，TaskManager
-部署的副本数决定了可用资源。增加副本数将扩大作业规模，而减少副本数将会触发缩减作业规模。通过使用 [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
-也可以自动实现该功能。
+[Reactive Mode]({{< ref "docs/deployment/elastic_scaling" >}}#reactive-mode) 允许在 *Application 集群* 始终根据可用资源调整作业并行度的模式下运行 Flink。与 Kubernetes 结合使用，TaskManager 部署的副本数决定了可用资源。增加副本数将扩大作业规模，而减少副本数将会触发缩减作业规模。通过使用 [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) 也可以自动实现该功能。
 
-要在 Kubernetes 上使用 Reactive Mode，请按照[使用 Application 集群部署作业](#deploy-application-cluster)
-完成相同的步骤。但是要使用 `flink-reactive-mode-configuration-configmap.yaml` 配置文件来代替 `flink-configuration-configmap.yaml`。该文件包含了针对
-Flink 的 `scheduler-mode: reactive` 配置。
+要在 Kubernetes 上使用 Reactive Mode，请按照[使用 Application 集群部署作业](#deploy-application-cluster) 完成相同的步骤。但是要使用 `flink-reactive-mode-configuration-configmap.yaml` 配置文件来代替 `flink-configuration-configmap.yaml`。该文件包含了针对 Flink 的 `scheduler-mode: reactive` 配置。
 
 一旦你部署了 *Application 集群*，就可以通过修改 `flink-taskmanager` 的部署副本数量来扩大或缩小作业的并行度。
+
 
 {{< top >}}
 
@@ -294,7 +278,6 @@ Flink 的 `scheduler-mode: reactive` 配置。
 ### 通用集群资源定义
 
 `flink-configuration-configmap.yaml`
-
 ```yaml
 apiVersion: v1
 kind: ConfigMap
@@ -359,6 +342,7 @@ data:
     logger.netty.name = org.jboss.netty.channel.DefaultChannelPipeline
     logger.netty.level = OFF
 ```
+
 
 `flink-reactive-mode-configuration-configmap.yaml`
 
@@ -440,12 +424,12 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - name: rpc
-      port: 6123
-    - name: blob-server
-      port: 6124
-    - name: webui
-      port: 8081
+  - name: rpc
+    port: 6123
+  - name: blob-server
+    port: 6124
+  - name: webui
+    port: 8081
   selector:
     app: flink
     component: jobmanager
@@ -461,17 +445,16 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - name: rest
-      port: 8081
-      targetPort: 8081
-      nodePort: 30081
+  - name: rest
+    port: 8081
+    targetPort: 8081
+    nodePort: 30081
   selector:
     app: flink
     component: jobmanager
 ```
 
-`taskmanager-query-state-service.yaml`。可选的 service，该 service 将 TaskManager 的端口暴露为公共 Kubernetes node 的节点端口，通过该端口来访问
-queryable state 服务。
+`taskmanager-query-state-service.yaml`。可选的 service，该 service 将 TaskManager 的端口暴露为公共 Kubernetes node 的节点端口，通过该端口来访问 queryable state 服务。
 
 ```yaml
 apiVersion: v1
@@ -481,10 +464,10 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - name: query-state
-      port: 6125
-      targetPort: 6125
-      nodePort: 30025
+  - name: query-state
+    port: 6125
+    targetPort: 6125
+    nodePort: 30025
   selector:
     app: flink
     component: taskmanager
@@ -495,7 +478,6 @@ spec:
 ### Session 集群资源定义
 
 `jobmanager-session-deployment-non-ha.yaml`
-
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -514,39 +496,38 @@ spec:
         component: jobmanager
     spec:
       containers:
-        - name: jobmanager
-          image: apache/flink:{{< stable >}}{{< version >}}-scala{{< scala_version >}}{{< /stable >}}{{< unstable >}}latest{{< /unstable >}}
-          args: [ "jobmanager" ]
-          ports:
-            - containerPort: 6123
-              name: rpc
-            - containerPort: 6124
-              name: blob-server
-            - containerPort: 8081
-              name: webui
-          livenessProbe:
-            tcpSocket:
-              port: 6123
-            initialDelaySeconds: 30
-            periodSeconds: 60
-          volumeMounts:
-            - name: flink-config-volume
-              mountPath: /opt/flink/conf
-          securityContext:
-            runAsUser: 9999  # 参考官方 flink 镜像中的 _flink_ 用户，如有必要可以修改
-      volumes:
+      - name: jobmanager
+        image: apache/flink:{{< stable >}}{{< version >}}-scala{{< scala_version >}}{{< /stable >}}{{< unstable >}}latest{{< /unstable >}}
+        args: ["jobmanager"]
+        ports:
+        - containerPort: 6123
+          name: rpc
+        - containerPort: 6124
+          name: blob-server
+        - containerPort: 8081
+          name: webui
+        livenessProbe:
+          tcpSocket:
+            port: 6123
+          initialDelaySeconds: 30
+          periodSeconds: 60
+        volumeMounts:
         - name: flink-config-volume
-          configMap:
-            name: flink-config
-            items:
-              - key: flink-conf.yaml
-                path: flink-conf.yaml
-              - key: log4j-console.properties
-                path: log4j-console.properties
+          mountPath: /opt/flink/conf
+        securityContext:
+          runAsUser: 9999  # 参考官方 flink 镜像中的 _flink_ 用户，如有必要可以修改
+      volumes:
+      - name: flink-config-volume
+        configMap:
+          name: flink-config
+          items:
+          - key: flink-conf.yaml
+            path: flink-conf.yaml
+          - key: log4j-console.properties
+            path: log4j-console.properties
 ```
 
 `jobmanager-session-deployment-ha.yaml`
-
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -565,47 +546,46 @@ spec:
         component: jobmanager
     spec:
       containers:
-        - name: jobmanager
-          image: apache/flink:{{< stable >}}{{< version >}}-scala{{< scala_version >}}{{< /stable >}}{{< unstable >}}latest{{< /unstable >}}
-          env:
-            - name: POD_IP
-              valueFrom:
-                fieldRef:
-                  apiVersion: v1
-                  fieldPath: status.podIP
-          # 下面的 args 参数会使用 POD_IP 对应的值覆盖 config map 中 jobmanager.rpc.address 的属性值。
-          args: [ "jobmanager", "$(POD_IP)" ]
-          ports:
-            - containerPort: 6123
-              name: rpc
-            - containerPort: 6124
-              name: blob-server
-            - containerPort: 8081
-              name: webui
-          livenessProbe:
-            tcpSocket:
-              port: 6123
-            initialDelaySeconds: 30
-            periodSeconds: 60
-          volumeMounts:
-            - name: flink-config-volume
-              mountPath: /opt/flink/conf
-          securityContext:
-            runAsUser: 9999  # 参考官方 flink 镜像中的 _flink_ 用户，如有必要可以修改
+      - name: jobmanager
+        image: apache/flink:{{< stable >}}{{< version >}}-scala{{< scala_version >}}{{< /stable >}}{{< unstable >}}latest{{< /unstable >}}
+        env:
+        - name: POD_IP
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: status.podIP
+        # 下面的 args 参数会使用 POD_IP 对应的值覆盖 config map 中 jobmanager.rpc.address 的属性值。
+        args: ["jobmanager", "$(POD_IP)"]
+        ports:
+        - containerPort: 6123
+          name: rpc
+        - containerPort: 6124
+          name: blob-server
+        - containerPort: 8081
+          name: webui
+        livenessProbe:
+          tcpSocket:
+            port: 6123
+          initialDelaySeconds: 30
+          periodSeconds: 60
+        volumeMounts:
+        - name: flink-config-volume
+          mountPath: /opt/flink/conf
+        securityContext:
+          runAsUser: 9999  # 参考官方 flink 镜像中的 _flink_ 用户，如有必要可以修改
       serviceAccountName: flink-service-account # 拥有创建、编辑、删除 ConfigMap 权限的 Service 账号
       volumes:
-        - name: flink-config-volume
-          configMap:
-            name: flink-config
-            items:
-              - key: flink-conf.yaml
-                path: flink-conf.yaml
-              - key: log4j-console.properties
-                path: log4j-console.properties
+      - name: flink-config-volume
+        configMap:
+          name: flink-config
+          items:
+          - key: flink-conf.yaml
+            path: flink-conf.yaml
+          - key: log4j-console.properties
+            path: log4j-console.properties
 ```
 
 `taskmanager-session-deployment.yaml`
-
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -624,33 +604,33 @@ spec:
         component: taskmanager
     spec:
       containers:
-        - name: taskmanager
-          image: apache/flink:{{< stable >}}{{< version >}}-scala{{< scala_version >}}{{< /stable >}}{{< unstable >}}latest{{< /unstable >}}
-          args: [ "taskmanager" ]
-          ports:
-            - containerPort: 6122
-              name: rpc
-            - containerPort: 6125
-              name: query-state
-          livenessProbe:
-            tcpSocket:
-              port: 6122
-            initialDelaySeconds: 30
-            periodSeconds: 60
-          volumeMounts:
-            - name: flink-config-volume
-              mountPath: /opt/flink/conf/
-          securityContext:
-            runAsUser: 9999  # 参考官方 flink 镜像中的 _flink_ 用户，如有必要可以修改
-      volumes:
+      - name: taskmanager
+        image: apache/flink:{{< stable >}}{{< version >}}-scala{{< scala_version >}}{{< /stable >}}{{< unstable >}}latest{{< /unstable >}}
+        args: ["taskmanager"]
+        ports:
+        - containerPort: 6122
+          name: rpc
+        - containerPort: 6125
+          name: query-state
+        livenessProbe:
+          tcpSocket:
+            port: 6122
+          initialDelaySeconds: 30
+          periodSeconds: 60
+        volumeMounts:
         - name: flink-config-volume
-          configMap:
-            name: flink-config
-            items:
-              - key: flink-conf.yaml
-                path: flink-conf.yaml
-              - key: log4j-console.properties
-                path: log4j-console.properties
+          mountPath: /opt/flink/conf/
+        securityContext:
+          runAsUser: 9999  # 参考官方 flink 镜像中的 _flink_ 用户，如有必要可以修改
+      volumes:
+      - name: flink-config-volume
+        configMap:
+          name: flink-config
+          items:
+          - key: flink-conf.yaml
+            path: flink-conf.yaml
+          - key: log4j-console.properties
+            path: log4j-console.properties
 ```
 
 <a name="application-cluster-resource-definitions"></a>
@@ -658,7 +638,6 @@ spec:
 ### Application 集群资源定义
 
 `jobmanager-application-non-ha.yaml`
-
 ```yaml
 apiVersion: batch/v1
 kind: Job
@@ -676,7 +655,7 @@ spec:
         - name: jobmanager
           image: apache/flink:{{< stable >}}{{< version >}}-scala{{< scala_version >}}{{< /stable >}}{{< unstable >}}latest{{< /unstable >}}
           env:
-          args: [ "standalone-job", "--job-classname", "com.job.ClassName", <optional arguments>, <job arguments> ] # 可选的参数项: ["--job-id", "<job id>", "--fromSavepoint", "/path/to/savepoint", "--allowNonRestoredState"]
+          args: ["standalone-job", "--job-classname", "com.job.ClassName", <optional arguments>, <job arguments>] # 可选的参数项: ["--job-id", "<job id>", "--fromSavepoint", "/path/to/savepoint", "--allowNonRestoredState"]
           ports:
             - containerPort: 6123
               name: rpc
@@ -711,7 +690,6 @@ spec:
 ```
 
 `jobmanager-application-ha.yaml`
-
 ```yaml
 apiVersion: batch/v1
 kind: Job
@@ -730,13 +708,13 @@ spec:
         - name: jobmanager
           image: apache/flink:{{< stable >}}{{< version >}}-scala{{< scala_version >}}{{< /stable >}}{{< unstable >}}latest{{< /unstable >}}
           env:
-            - name: POD_IP
-              valueFrom:
-                fieldRef:
-                  apiVersion: v1
-                  fieldPath: status.podIP
+          - name: POD_IP
+            valueFrom:
+              fieldRef:
+                apiVersion: v1
+                fieldPath: status.podIP
           # 下面的 args 参数会使用 POD_IP 对应的值覆盖 config map 中 jobmanager.rpc.address 的属性值。
-          args: [ "standalone-job", "--host", "$(POD_IP)", "--job-classname", "com.job.ClassName", <optional arguments>, <job arguments> ] # 可选参数项: ["--job-id", "<job id>", "--fromSavepoint", "/path/to/savepoint", "--allowNonRestoredState"]
+          args: ["standalone-job", "--host", "$(POD_IP)", "--job-classname", "com.job.ClassName", <optional arguments>, <job arguments>] # 可选参数项: ["--job-id", "<job id>", "--fromSavepoint", "/path/to/savepoint", "--allowNonRestoredState"]
           ports:
             - containerPort: 6123
               name: rpc
@@ -772,7 +750,6 @@ spec:
 ```
 
 `taskmanager-job-deployment.yaml`
-
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -791,37 +768,39 @@ spec:
         component: taskmanager
     spec:
       containers:
-        - name: taskmanager
-          image: apache/flink:{{< stable >}}{{< version >}}-scala{{< scala_version >}}{{< /stable >}}{{< unstable >}}latest{{< /unstable >}}
-          env:
-          args: [ "taskmanager" ]
-          ports:
-            - containerPort: 6122
-              name: rpc
-            - containerPort: 6125
-              name: query-state
-          livenessProbe:
-            tcpSocket:
-              port: 6122
-            initialDelaySeconds: 30
-            periodSeconds: 60
-          volumeMounts:
-            - name: flink-config-volume
-              mountPath: /opt/flink/conf/
-            - name: job-artifacts-volume
-              mountPath: /opt/flink/usrlib
-          securityContext:
-            runAsUser: 9999  # 参考官方 flink 镜像中的 _flink_ 用户，如有必要可以修改
-      volumes:
+      - name: taskmanager
+        image: apache/flink:{{< stable >}}{{< version >}}-scala{{< scala_version >}}{{< /stable >}}{{< unstable >}}latest{{< /unstable >}}
+        env:
+        args: ["taskmanager"]
+        ports:
+        - containerPort: 6122
+          name: rpc
+        - containerPort: 6125
+          name: query-state
+        livenessProbe:
+          tcpSocket:
+            port: 6122
+          initialDelaySeconds: 30
+          periodSeconds: 60
+        volumeMounts:
         - name: flink-config-volume
-          configMap:
-            name: flink-config
-            items:
-              - key: flink-conf.yaml
-                path: flink-conf.yaml
-              - key: log4j-console.properties
-                path: log4j-console.properties
+          mountPath: /opt/flink/conf/
         - name: job-artifacts-volume
-          hostPath:
-            path: /host/path/to/job/artifacts
+          mountPath: /opt/flink/usrlib
+        securityContext:
+          runAsUser: 9999  # 参考官方 flink 镜像中的 _flink_ 用户，如有必要可以修改
+      volumes:
+      - name: flink-config-volume
+        configMap:
+          name: flink-config
+          items:
+          - key: flink-conf.yaml
+            path: flink-conf.yaml
+          - key: log4j-console.properties
+            path: log4j-console.properties
+      - name: job-artifacts-volume
+        hostPath:
+          path: /host/path/to/job/artifacts
 ```
+
+{{< top >}}

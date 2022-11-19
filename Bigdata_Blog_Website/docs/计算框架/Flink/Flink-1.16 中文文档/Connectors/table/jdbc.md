@@ -382,10 +382,10 @@ TaskManager）将维护一个缓存。Flink 将优先查找缓存，只有当缓
         </tr>
         <tr>
             <td>Oracle</td>
-            <td>MERGE INTO .. USING (..) ON (..) <br>
-                WHEN MATCHED THEN UPDATE SET (..) <br>
+            <br>MERGE INTO .. USING (..) ON (..) <br>
+                WHEN MATCHED THEN UPDATE SET (..) </br>
                 WHEN NOT MATCHED THEN INSERT (..) <br>
-                VALUES (..)</td>
+                VALUES (..)</br></td>
         <tr>
             <td>PostgreSQL</td>
             <td>INSERT .. ON CONFLICT .. DO UPDATE SET ..</td>

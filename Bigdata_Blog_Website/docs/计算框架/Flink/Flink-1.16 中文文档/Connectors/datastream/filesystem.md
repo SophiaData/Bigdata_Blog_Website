@@ -257,7 +257,7 @@ new HiveSource<>(
 [documentation on data sources]({{< ref "docs/dev/datastream/sources.md" >}}) 和在
 <a href="https://cwiki.apache.org/confluence/display/FLINK/FLIP-27%3A+Refactor+Source+Interface">FLIP-27</a>
 中获取更加具体的讨论详情。
-{{< /hint >}}
+
 
 <a name="file-sink"></a>
 
@@ -275,7 +275,7 @@ File Sink 将传入的数据写入存储桶中。考虑到输入流可以是无�
 **重要**: 在 `STREAMING` 模式下使用 `FileSink` 需要开启 Checkpoint 功能。
 文件只在 Checkpoint 成功时生成。如果没有开启 Checkpoint 功能，文件将永远停留在 `in-progress` 或者 `pending` 的状态，并且下游系统将不能安全读取该文件数据。
 
-{{< /hint >}}
+
 
 {{< img src="/fig/streamfilesink_bucketing.png"  width="100%" >}}
 
@@ -401,7 +401,7 @@ Flink 内置了5种 BulkWriter 工厂类：
 {{< hint info >}}
 **重要** Bulk-encoded Format 仅支持一种继承了 `CheckpointRollingPolicy` 类的滚动策略。
 在每个 Checkpoint 都会滚动。另外也可以根据大小或处理时间进行滚动。
-{{< /hint >}}
+
 
 <a name="parquet-format"></a>
 
@@ -925,7 +925,7 @@ Flink 内置了两种 BucketAssigners：
 
 {{< hint info >}}
 PyFlink 只支持 `DateTimeBucketAssigner` 和 `BasePathBucketAssigner` 。
-{{< /hint >}}
+
 
 <a name="rolling-policy"></a>
 
@@ -942,7 +942,7 @@ Flink 内置了两种 RollingPolicies：
 
 {{< hint info >}}
 PyFlink 只支持 `DefaultRollingPolicy` 和 `OnCheckpointRollingPolicy` 。
-{{< /hint >}}
+
 
 <a name="part-file-lifecycle"></a>
 
@@ -1161,11 +1161,11 @@ file_sink = FileSink \
 **注意事项1** 一旦启用了文件合并功能，此后若需要再关闭，必须在构建`FileSink`时显式调用`disableCompact`方法。
 
 **注意事项2** 如果启用了文件合并功能，文件可见的时间会被延长。
-{{< /hint >}}
+
 
 {{< hint info >}}
 PyFlink 只支持 `ConcatFileCompactor` 和 `IdenticalFileCompactor` 。
-{{< /hint >}}
+
 
 <a name="important-considerations"></a>
 

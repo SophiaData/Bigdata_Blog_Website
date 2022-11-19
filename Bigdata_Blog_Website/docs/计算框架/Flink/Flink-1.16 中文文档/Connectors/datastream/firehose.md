@@ -116,7 +116,7 @@ kdf_sink = KinesisFirehoseSink.builder() \
 {{< /tab >}} {{< /tabs >}}
 
 ## Configurations
-
+```
 Flink's Firehose sink is created by using the static builder `KinesisFirehoseSink.<InputType>builder()`.
 
 1. __setFirehoseClientProperties(Properties sinkProperties)__
@@ -151,7 +151,7 @@ Flink's Firehose sink is created by using the static builder `KinesisFirehoseSin
     * The maximum record size that the sink will accept, records larger than this will be automatically rejected.
 11. _build()_
     * Constructs and returns the Firehose sink.
-
+```
 ## Using Custom Firehose Endpoints
 
 It is sometimes desirable to have Flink operate as a consumer or producer against a Firehose VPC endpoint or a non-AWS

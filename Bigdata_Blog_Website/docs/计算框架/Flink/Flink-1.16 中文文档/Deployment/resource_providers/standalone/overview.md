@@ -82,7 +82,7 @@ cd flink-*
 
 <div class="row">
   <div class="col-md-6 text-center">
-    {{<img src="/fig/quickstart_cluster.png" style="width: 60%">}}
+    {{< >}}
   </div>
 <div class="col-md-6">
   <div class="row">

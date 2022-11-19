@@ -390,8 +390,8 @@ Flink 提供了两种类型分区提交触发器：
         <td><h5>partition.time-extractor.timestamp-formatter</h5></td>
         <td style="word-wrap: break-word;">yyyy-MM-dd&nbsp;HH:mm:ss</td>
         <td>String</td>
-        <td> 转换分区 timestamp 字符串值为 timestamp 的 formatter，分区 timestamp 字符串值通过 'partition.time-extractor.timestamp-pattern' 属性表达。例如，分区 timestamp 提取来自多个分区字段，比如 'year'、'month' 和 'day'，可以配置 'partition.time-extractor.timestamp-pattern' 属性为 '$year$month$day'，并且配置 `partition.time-extractor.timestamp-formatter` 属性为 'yyyyMMdd'。默认的 formatter 是 'yyyy-MM-dd HH:mm:ss'。
-            <br>这的 timestamp-formatter 和 Java 的 <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a> 是通用的。
+        <br> 转换分区 timestamp 字符串值为 timestamp 的 formatter，分区 timestamp 字符串值通过 'partition.time-extractor.timestamp-pattern' 属性表达。例如，分区 timestamp 提取来自多个分区字段，比如 'year'、'month' 和 'day'，可以配置 'partition.time-extractor.timestamp-pattern' 属性为 '$year$month$day'，并且配置 `partition.time-extractor.timestamp-formatter` 属性为 'yyyyMMdd'。默认的 formatter 是 'yyyy-MM-dd HH:mm:ss'。
+            </br>这的 timestamp-formatter 和 Java 的 <a href="https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a> 是通用的。
  				</td>
     </tr>
   </tbody>

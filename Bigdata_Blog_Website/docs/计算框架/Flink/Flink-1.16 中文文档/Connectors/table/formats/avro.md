@@ -172,7 +172,7 @@ Format 参数
       <td></td>
     </tr>
     <tr>
-      <td><code>MULTISET</code><br>
+      <td><code>MULTISET</code></br>
       (元素必须是 string/char/varchar 类型)</td>
       <td><code>map</code></td>
       <td></td>

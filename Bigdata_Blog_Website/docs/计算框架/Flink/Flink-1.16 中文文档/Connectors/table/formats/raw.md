@@ -133,7 +133,7 @@ Format 参数
     </tr>
     <tr>
       <td><code>SMALLINT</code></td>
-      <td>采用big-endian（默认）编码的两个字节。<br>
+      <td>采用big-endian（默认）编码的两个字节。</br>
        字节序可以通过 'raw.endianness' 配置。</td>
     </tr>
     <tr>
@@ -143,7 +143,7 @@ Format 参数
     </tr>
     <tr>
       <td><code>BIGINT</code></td>
-      <td>采用 big-endian （默认）编码的八个字节。<br>
+      <td>采用 big-endian （默认）编码的八个字节。</br>
        字节序可以通过 'raw.endianness' 配置。</td>
     </tr>
     <tr>
@@ -153,7 +153,7 @@ Format 参数
     </tr>
     <tr>
       <td><code>DOUBLE</code></td>
-      <td>采用 IEEE 754 格式和 big-endian （默认）编码的八个字节。<br>
+      <td>采用 IEEE 754 格式和 big-endian （默认）编码的八个字节。</br>
        字节序可以通过 'raw.endianness' 配置。</td>
     </tr>
     <tr>

@@ -277,7 +277,7 @@ Flink 的 HBase 连接器将所有数据类型（除字符串外）`null` 值编
       <td>
 byte[] toBytes(String s)
 String toString(byte[] b)
-{{< /highlight >}}
+
       </td>
     </tr>
     <tr>
@@ -298,7 +298,7 @@ boolean toBoolean(byte[] b)
       <td>
 byte[] toBytes(BigDecimal v)
 BigDecimal toBigDecimal(byte[] b)
-{{< /highlight >}}
+
 </td>
 </tr>
 <tr>

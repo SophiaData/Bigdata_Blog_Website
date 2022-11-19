@@ -1,3 +1,12 @@
+---
+title: "Python REPL"
+weight: 7
+type: docs
+aliases:
+- /zh/deployment/repls/python_shell.html
+- /zh/apis/python_shell.html
+- /zh/ops/python_shell.html
+---
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
@@ -19,12 +28,12 @@ under the License.
 
 # Python REPL
 
-Flink附带了一个集成的交互式Python Shell。 它既能够运行在本地启动的local模式，也能够运行在集群启动的cluster模式下。 本地安装Flink，请看[本地安装]({{< ref "
-docs/deployment/resource-providers/standalone/overview" >}})页面。 您也可以从源码安装Flink，请看[从源码构建 Flink]({{< ref "
-docs/flinkDev/building" >}})页面。
+Flink附带了一个集成的交互式Python Shell。
+它既能够运行在本地启动的local模式，也能够运行在集群启动的cluster模式下。
+本地安装Flink，请看[本地安装]({{< ref "docs/deployment/resource-providers/standalone/overview" >}})页面。
+您也可以从源码安装Flink，请看[从源码构建 Flink]({{< ref "docs/flinkDev/building" >}})页面。
 
-<span class="label label-info">注意</span> Python Shell会调用“python”命令。关于Python执行环境的要求，请参考Python Table API[环境安装]({{< ref "
-docs/dev/python/installation" >}})。
+<span class="label label-info">注意</span> Python Shell会调用“python”命令。关于Python执行环境的要求，请参考Python Table API[环境安装]({{< ref "docs/dev/python/installation" >}})。
 
 你可以通过PyPi安装PyFlink，然后使用Python Shell:
 
@@ -39,15 +48,16 @@ $ pyflink-shell.sh local
 
 ## 使用
 
-当前Python shell支持Table API的功能。 在启动之后，Table Environment的相关内容将会被自动加载。 可以通过变量"bt_env"来使用BatchTableEnvironment，通过变量"st_env"
-来使用StreamTableEnvironment。
+当前Python shell支持Table API的功能。
+在启动之后，Table Environment的相关内容将会被自动加载。
+可以通过变量"bt_env"来使用BatchTableEnvironment，通过变量"st_env"来使用StreamTableEnvironment。
 
 ### Table API
 
 下面是一个通过Python Shell 运行的简单示例:
-{{< tabs "7207dd60-97bf-461b-b2a5-fcc3dea507c6" >}} {{< tab "stream" >}}
-
-```
+{{< tabs "7207dd60-97bf-461b-b2a5-fcc3dea507c6" >}}
+{{< tab "stream" >}}
+```python
 >>> import tempfile
 >>> import os
 >>> import shutil
@@ -76,10 +86,9 @@ $ pyflink-shell.sh local
 >>> with open(os.path.join(sink_path, os.listdir(sink_path)[0]), 'r') as f:
 ...     print(f.read())
 ```
-
-{{< /tab >}} {{< tab "batch" >}}
-
-```
+{{< /tab >}}
+{{< tab "batch" >}}
+```python
 >>> import tempfile
 >>> import os
 >>> import shutil
@@ -108,8 +117,8 @@ $ pyflink-shell.sh local
 >>> with open(os.path.join(sink_path, os.listdir(sink_path)[0]), 'r') as f:
 ...     print(f.read())
 ```
-
-{{< /tab >}} {{< /tabs >}}
+{{< /tab >}}
+{{< /tabs >}}
 
 ## 启动
 
@@ -127,9 +136,11 @@ Python Shell运行在local模式下，只需要执行:
 pyflink-shell.sh local
 ```
 
+
 ### Remote
 
-Python Shell运行在一个指定的JobManager上，通过关键字`remote`和对应的JobManager 的地址和端口号来进行指定:
+Python Shell运行在一个指定的JobManager上，通过关键字`remote`和对应的JobManager
+的地址和端口号来进行指定:
 
 ```bash
 pyflink-shell.sh remote <hostname> <portnumber>
@@ -137,7 +148,8 @@ pyflink-shell.sh remote <hostname> <portnumber>
 
 ### Yarn Python Shell cluster
 
-Python Shell可以运行在YARN集群之上。Python shell在Yarn上部署一个新的Flink集群，并进行连接。除了指定container数量，你也 可以指定JobManager的内存，YARN应用的名字等参数。
+Python Shell可以运行在YARN集群之上。Python shell在Yarn上部署一个新的Flink集群，并进行连接。除了指定container数量，你也
+可以指定JobManager的内存，YARN应用的名字等参数。
 例如，在一个部署了两个TaskManager的Yarn集群上运行Python Shell:
 
 ```bash
@@ -146,6 +158,7 @@ pyflink-shell.sh yarn -n 2
 
 关于所有可选的参数，可以查看本页面底部的完整说明。
 
+
 ### Yarn Session
 
 如果你已经通过Flink Yarn Session部署了一个Flink集群，能够通过以下的命令连接到这个集群:
@@ -153,6 +166,7 @@ pyflink-shell.sh yarn -n 2
 ```bash
 pyflink-shell.sh yarn
 ```
+
 
 ## 完整的参考
 
@@ -190,3 +204,5 @@ Flink Python Shell
 -h | --help
     打印输出使用文档
 ```
+
+{{< top >}}

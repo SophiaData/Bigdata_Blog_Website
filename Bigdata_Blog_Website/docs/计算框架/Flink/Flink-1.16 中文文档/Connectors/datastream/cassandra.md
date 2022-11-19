@@ -43,9 +43,10 @@ There are multiple ways to bring up a Cassandra instance on local machine:
 ## Cassandra Sinks
 
 ### Configurations
-
+```markdown
 Flink's Cassandra sink are created by using the static CassandraSink.addSink(DataStream<IN> input) method.
 This method returns a CassandraSinkBuilder, which offers methods to further configure the sink, and finally `build()` the sink instance.
+```
 
 The following configuration methods can be used:
 

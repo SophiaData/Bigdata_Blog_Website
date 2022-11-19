@@ -15,9 +15,11 @@ description: Flink CDC 2.3.0 近期发布
 2.3.0 新增了 DB2 CDC 连接器
 
 # 增量快照迎来新的连接器成员
+
 2.3.0 版本MongoDB CDC，Oracle CDC 两大连接器均支持了增量快照，实现无锁读取+并发读取+断点续传
 
 # 优化
+
 2.3.0 版本 MySQL CDC 连接器性能和稳定性大幅提升
 
 # Flink 支持
@@ -54,9 +56,11 @@ https://github.com/ververica/flink-cdc-connectors/releases
 Flink cdc 钉钉群
 
 群号：33121212
+
 二维码：
 ![扫码加入](https://img-blog.csdnimg.cn/7003c46fb70243c08a44575f8de63bd2.png)
 
 内容参考 flink cdc 发布群公告
+
 鸣谢 雪尽老师
 

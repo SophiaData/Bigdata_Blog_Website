@@ -297,29 +297,29 @@ object RDDDemo {
 
 - 1 通用配置项
 
-{{< img width="887" alt="image" src="https://user-images.githubusercontent.com/34996528/167132236-a3a95203-7845-4ee0-901d-1675367e7cf2.png" >
+![[img](https://user-images.githubusercontent.com/34996528/167132236-a3a95203-7845-4ee0-901d-1675367e7cf2.png)
 
-{{< img width="890" alt="image" src="https://user-images.githubusercontent.com/34996528/167132163-23461f7a-1fca-462f-a612-91e1993d7aab.png" >
+![[img](https://user-images.githubusercontent.com/34996528/167132163-23461f7a-1fca-462f-a612-91e1993d7aab.png)
 
-{{< img width="895" alt="image" src="https://user-images.githubusercontent.com/34996528/167132357-47304220-e8f8-4d21-8aab-c00cd4107baf.png" >
+![[img](https://user-images.githubusercontent.com/34996528/167132357-47304220-e8f8-4d21-8aab-c00cd4107baf.png)
 
-{{< img width="904" alt="image" src="https://user-images.githubusercontent.com/34996528/167132534-ed6190d0-cb0f-4f69-b992-e55edfecf099.png" >
+![[img](https://user-images.githubusercontent.com/34996528/167132534-ed6190d0-cb0f-4f69-b992-e55edfecf099.png)
 
 - 2 SQL 和 Dataframe 专有配置
 
-{{< img width="883" alt="image" src="https://user-images.githubusercontent.com/34996528/167132622-aea37038-c877-4fa4-81c4-bae5658d8b60.png" >
+![[img](https://user-images.githubusercontent.com/34996528/167132622-aea37038-c877-4fa4-81c4-bae5658d8b60.png)
 
 - 3 RDD 专有配置
 
-{{< img width="921" alt="image" src="https://user-images.githubusercontent.com/34996528/167132684-3a3dcbb1-b1c5-4c0d-a5c9-7ce65f63a08b.png" >
+![img](https://user-images.githubusercontent.com/34996528/167132684-3a3dcbb1-b1c5-4c0d-a5c9-7ce65f63a08b.png)
 
 - 4 Doris 和 Spark 列类型映射关系:
 
-{{< img width="900" alt="image" src="https://user-images.githubusercontent.com/34996528/167132772-19c41625-5c50-47cd-97eb-f97df6983431.png" >
+![img](https://user-images.githubusercontent.com/34996528/167132772-19c41625-5c50-47cd-97eb-f97df6983431.png)
 
-{{< img width="876" alt="image" src="https://user-images.githubusercontent.com/34996528/167133133-0f219de7-2410-4e48-b576-892f7a6e5064.png" >
+![img](https://user-images.githubusercontent.com/34996528/167133133-0f219de7-2410-4e48-b576-892f7a6e5064.png)
 
-{{< img width="905" alt="image" src="https://user-images.githubusercontent.com/34996528/167132972-38a871bf-2057-4cfa-baf1-37ff494ab00e.png" >
+![img](https://user-images.githubusercontent.com/34996528/167132972-38a871bf-2057-4cfa-baf1-37ff494ab00e.png)
 
 ### 使用 JDBC 的方式（不推荐）
 

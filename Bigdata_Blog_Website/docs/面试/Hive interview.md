@@ -2,7 +2,7 @@
 
 Hive元数据默认存储在derby数据库，不支持多客户端访问，所以将元数据存储在MySQl，支持多客户端访问。
 
-<img width="236" alt="image" src="https://user-images.githubusercontent.com/34996528/164068515-09016e87-362d-4b98-a16f-585bc83668ae.png">
+{{< img width="236" alt="image" src="https://user-images.githubusercontent.com/34996528/164068515-09016e87-362d-4b98-a16f-585bc83668ae.png" >}}
 
 
 ## Hive和数据库比较
@@ -61,16 +61,26 @@ Hive支持很大规模的数据计算；数据库可以支持的数据规模较�
 
 1）Rank
 （1）RANK() 排序相同时会重复，总数不会变
+
 （2）DENSE_RANK() 排序相同时会重复，总数会减少
+
 （3）ROW_NUMBER() 会根据顺序计算
+
 2） OVER()：指定分析函数工作的数据窗口大小，这个数据窗口大小可能会随着行的变而变化
 （1）CURRENT ROW：当前行
+
 （2）n PRECEDING：往前n行数据
+
 （3） n FOLLOWING：往后n行数据
+
 （4）UNBOUNDED：起点，UNBOUNDED PRECEDING 表示从前面的起点， UNBOUNDED FOLLOWING表示到后面的终点
+
 （5） LAG(col,n)：往前第n行数据
+
 （6）LEAD(col,n)：往后第n行数据
-（7） NTILE(n)：把有序分区中的行分发到指定数据的组中，各个组有编号，编号从1开始，对于每一行，NTILE返回此行所属的组的编号。注意：n必须为int类型。
+
+（7） NTILE(n)：把有序分区中的行分发到指定数据的组中，各个组有编号，编号从1开始，对于每一行，NTILE返回此行所属的组的编号。
+注意：n必须为int类型。
 
 
 

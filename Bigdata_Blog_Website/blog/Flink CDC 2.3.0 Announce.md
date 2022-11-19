@@ -59,7 +59,7 @@ Flink cdc 钉钉群
 群号：33121212
 
 二维码：
-![扫码加入](https://img-blog.csdnimg.cn/7003c46fb70243c08a44575f8de63bd2.png)
+![扫码加入](https://user-images.githubusercontent.com/9601882/158350201-a1de35e6-0399-4a91-b5b0-e2fd5d33e33c.png)
 
 内容参考 flink cdc 发布群公告
 

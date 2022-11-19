@@ -2,7 +2,7 @@
 
 Hive元数据默认存储在derby数据库，不支持多客户端访问，所以将元数据存储在MySQl，支持多客户端访问。
 
-{{< img width="236" alt="image" src="https://user-images.githubusercontent.com/34996528/164068515-09016e87-362d-4b98-a16f-585bc83668ae.png" >}}
+![img](https://user-images.githubusercontent.com/34996528/164068515-09016e87-362d-4b98-a16f-585bc83668ae.png)
 
 
 ## Hive和数据库比较

@@ -30,7 +30,7 @@ https://www.yuque.com/docs/share/b89479ab-9c24-45c8-9390-77299ae0c4cd?#AkK9
 
 
 
-{{（截图四）<img width="1071" alt="image" src="https://user-images.githubusercontent.com/34996528/167282523-9e64992b-cdc8-4324-9d75-7aec2a4a0116.png">}}
+{{（截图四)< img width="1071" alt="image" src="https://user-images.githubusercontent.com/34996528/167282523-9e64992b-cdc8-4324-9d75-7aec2a4a0116.png" >}}
 
 
 > 图示链接

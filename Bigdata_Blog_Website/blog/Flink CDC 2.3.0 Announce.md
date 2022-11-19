@@ -3,7 +3,7 @@ authors: skylines
 title: Flink CDC 2.3.0 Announce
 date: 21:47:11 UTC+8 Saturday, 19 November 2022
 tags: 数据集成
-keywords: [Fink CDC]
+keywords: [Fink CDC, Flink]
 description: Flink CDC 2.3.0 近期发布
 ---
 

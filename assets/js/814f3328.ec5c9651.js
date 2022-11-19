@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Flink CDC 2.3.0 Announce","permalink":"/Bigdata_Blog_Website/blog/Flink CDC 2.3.0 Announce"}]}')}}]);

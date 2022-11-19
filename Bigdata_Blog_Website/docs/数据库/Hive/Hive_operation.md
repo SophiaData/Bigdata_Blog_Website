@@ -186,7 +186,7 @@ hive (default)> dfs -get /user/hive/warehouse/student/student.txt
 (defahiveult)> export table default.student 
 to '/user/hive/warehouse/export/student';
 ```
-export 和 import 主要用于两个 Hadoop 平台集群之间  Hive 表迁移。
+{{export 和 import 主要用于两个 Hadoop 平台集群之间  Hive 表迁移。}}
 
 #### Sqoop 导出
 

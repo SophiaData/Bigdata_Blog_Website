@@ -84,7 +84,7 @@ https://github.com/sjwiesman/flink-scala-3
 
 - note 使用 flink sql-client 时，如果使用 flink-table-planner_2.12 带有 Scala 后缀的 jar 包来使用 flink Scala app 时，需将其放入 opt 目录下，如果放置在 lib 目录下会目前会导致异常
 
-<img width="1092" alt="image" src="https://user-images.githubusercontent.com/34996528/167307335-6161a7a8-9754-4c39-88e5-d1c85eb8c1dc.png">
+{{<img width="1092" alt="image" src="https://user-images.githubusercontent.com/34996528/167307335-6161a7a8-9754-4c39-88e5-d1c85eb8c1dc.png">}}
 
 
 

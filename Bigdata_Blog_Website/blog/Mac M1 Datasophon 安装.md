@@ -2,7 +2,7 @@
 authors: 
   - name: skylines
     url: https://github.com/rookiegao
-title: mac m1 datasophon 安装
+title: Mac M1 Datasophon 安装
 date: 2022-11-21 18:41:11
 tags: [管理平台]
 keywords: [Datasophon]

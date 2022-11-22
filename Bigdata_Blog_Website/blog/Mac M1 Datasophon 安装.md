@@ -7,6 +7,8 @@ date: 2022-11-21 18:41:11
 tags: [管理平台]
 keywords: [Datasophon]
 description: 国产大数据运维部署系统
+image: https://user-images.githubusercontent.com/34996528/203275795-397bdfb2-5510-4764-8948-9655016e8449.png
+
 ---
 
 # Mac M1 Datasophon 安装

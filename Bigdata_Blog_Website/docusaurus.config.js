@@ -97,7 +97,7 @@ const config = {
             items: [
               {
                 label: 'Issues',
-                href: 'https://github.com/SophiaData/Bigdata_Note/issues',
+                href: 'https://github.com/SophiaData/Bigdata_Blog_Website/issues',
               },
             ],
           },

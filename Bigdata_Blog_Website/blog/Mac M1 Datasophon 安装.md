@@ -7,6 +7,8 @@ date: 2022-11-21 18:41:11
 tags: [管理平台]
 keywords: [Datasophon]
 description: 国产大数据运维部署系统
+image: https://user-images.githubusercontent.com/34996528/203275795-397bdfb2-5510-4764-8948-9655016e8449.png
+
 ---
 
 # Mac M1 Datasophon 安装
@@ -14,6 +16,10 @@ description: 国产大数据运维部署系统
 ## 什么是 Datasophon
 
 DataSophon 是致力于自动化监控、运维、管理大数据基础组件和节点的，帮助您快速构建起稳定，高效的大数据集群服务。
+
+![img](https://user-images.githubusercontent.com/34996528/203275795-397bdfb2-5510-4764-8948-9655016e8449.png)
+
+<!--truncate-->
 
 ### 网络要求
 
@@ -72,10 +78,17 @@ mac m1 需尽可能先配置国内 yum 源否则容易出错例如配置华为�
 
 ### 执行数据脚本
 
+> mysql 5.7
 ```sql
 CREATE DATABASE IF NOT EXISTS datasophon DEFAULT CHARACTER SET utf8;
 grant all privileges on *.* to datasophon@"%" identified by 'datasophon' with grant option;
 GRANT ALL PRIVILEGES ON *.* TO 'datasophon'@'%';
+FLUSH PRIVILEGES;
+```
+> mysql 8
+```sql
+create user 'datasophon'@"localhost" IDENTIFIED BY 'datasophon';
+grant all on datasophon.* to "datasophon"@"localhost" with grant option;
 FLUSH PRIVILEGES;
 ```
 
@@ -200,6 +213,8 @@ jmx：jmx 插件
 ### 访问页面
 
 访问前端页面地址,接口 ip (自行修改) [http://172.16.69.202:8888](http://192.168.xx.xx:12345/dolphinscheduler) 默认用户名和密码为admin/admin123
+
+![img](https://user-images.githubusercontent.com/34996528/203197828-89280ea2-b4ed-4678-93c6-44537308d10a.png)
 
 ### 安装服务
 

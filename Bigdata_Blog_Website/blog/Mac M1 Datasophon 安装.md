@@ -72,10 +72,17 @@ mac m1 需尽可能先配置国内 yum 源否则容易出错例如配置华为�
 
 ### 执行数据脚本
 
+> mysql 5.7
 ```sql
 CREATE DATABASE IF NOT EXISTS datasophon DEFAULT CHARACTER SET utf8;
 grant all privileges on *.* to datasophon@"%" identified by 'datasophon' with grant option;
 GRANT ALL PRIVILEGES ON *.* TO 'datasophon'@'%';
+FLUSH PRIVILEGES;
+```
+> mysql 8
+```sql
+create user 'datasophon'@"localhost" IDENTIFIED BY 'datasophon';
+grant all on datasophon.* to "datasophon"@"localhost" with grant option;
 FLUSH PRIVILEGES;
 ```
 

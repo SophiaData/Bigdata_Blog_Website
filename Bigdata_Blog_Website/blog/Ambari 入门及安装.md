@@ -15,6 +15,8 @@ description: 使用 Ambari 对 apache 框架进行管理
 
 Apache Ambari 项目旨在通过开发用于配置，管理和监控 Apache Hadoop 集群的软件来简化 Hadoop 管理。Ambari 提供了一个直观，易用的 Hadoop 管理 Web UI。
 
+<!--truncate-->
+
 ## Ambari 的功能
 
 提供了跨任意数量的主机安装 Hadoop 服务的分步向导。

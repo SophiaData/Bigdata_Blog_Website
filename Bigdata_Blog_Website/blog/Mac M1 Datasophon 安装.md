@@ -201,6 +201,8 @@ jmx：jmx 插件
 
 访问前端页面地址,接口 ip (自行修改) [http://172.16.69.202:8888](http://192.168.xx.xx:12345/dolphinscheduler) 默认用户名和密码为admin/admin123
 
+![img](https://user-images.githubusercontent.com/34996528/203197828-89280ea2-b4ed-4678-93c6-44537308d10a.png)
+
 ### 安装服务
 
 初始化配置集群先选择部署 AlertManager,Grafana 和 Prometheus 三个组件。DataSophon 依赖此三个组件实现系统监控告警管理。

@@ -44,6 +44,8 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           postsPerPage: 5,
+          blogSidebarTitle: '全部博文',
+          blogSidebarCount: 'ALL',
           editUrl:
             'https://sophiadata.github.io/bigdata-blog/',
         },

@@ -17,6 +17,8 @@ image: https://user-images.githubusercontent.com/34996528/203275795-397bdfb2-551
 
 DataSophon 是致力于自动化监控、运维、管理大数据基础组件和节点的，帮助您快速构建起稳定，高效的大数据集群服务。
 
+<!--truncate-->
+
 ### 网络要求
 
 要求各机器各组件正常运行提供如下的网络端口配置：

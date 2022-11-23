@@ -52,6 +52,12 @@ const config = {
     ],
   ],
 
+    plugins: [
+      ['docusaurus-plugin-yandex-metrica', {
+        counterID: '91340636',
+      }],
+    ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

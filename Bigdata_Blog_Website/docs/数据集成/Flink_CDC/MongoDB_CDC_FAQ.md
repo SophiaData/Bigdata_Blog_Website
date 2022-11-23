@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+---
+
+# MongoDB_CDC_FAQ
+
 ## MongoDB CDC FAQ 参考 本文作了分类处理
 
 https://github.com/ververica/flink-cdc-connectors/wiki/FAQ(ZH)

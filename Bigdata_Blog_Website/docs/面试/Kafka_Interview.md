@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+---
+
+# Kafka_Interview
+
 ## Kafka 如何进行压力测试？
 
 Kafka官方自带压力测试脚本（kafka-consumer-perf-test.sh、kafka-producer-perf-test.sh）。Kafka压测时，可以查看到哪个地方出现了瓶颈（CPU，内存，网络IO）。一般都是网络IO达到瓶颈。

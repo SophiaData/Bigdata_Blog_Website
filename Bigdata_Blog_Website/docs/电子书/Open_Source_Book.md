@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 [深度学习入门开源书，基于TensorFlow 2.0案例实战](https://github.com/dragen1860/Deep-Learning-with-TensorFlow-book)
 
 [Go语言实现(从头开发一个迷你Go语言编译器](https://github.com/wa-lang/ugo-compiler-book)

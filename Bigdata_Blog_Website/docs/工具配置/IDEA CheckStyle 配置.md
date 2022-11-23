@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # IDEA CheckStyle 配置
 
 日常开发通常需要配置 code style ，而 idea 无疑是最受欢迎的开发工具之一，下面介绍如何应用 checkstyle 插件

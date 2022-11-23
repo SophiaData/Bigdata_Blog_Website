@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+---
+
+# Hive_Interview
+
 ## Hive的架构
 
 Hive元数据默认存储在derby数据库，不支持多客户端访问，所以将元数据存储在MySQl，支持多客户端访问。

@@ -1,4 +1,8 @@
-## Doris集成其他系统
+---
+sidebar_position: 1
+---
+
+# Doris集成其他系统
 
 准备表和数据
 
@@ -174,9 +178,7 @@ Spark Doris Connector 可以支持通过 Spark 读取 Doris 中存储的数据�
 
 #### SQL 方式读写数据
 
-```
-
-
+```scala
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 /**
@@ -215,7 +217,7 @@ object SQLDemo {
 
 #### DataFrame 方式读写数据（batch）
 
-```
+```scala
 
 
 import org.apache.spark.SparkConf
@@ -264,7 +266,7 @@ object DataFrameDemo {
 
 #### RDD 方式读取数据
 
-```
+```scala
 
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.SparkSession
@@ -325,7 +327,7 @@ object RDDDemo {
 
 这种方式是早期写法，Spark 无法感知 Doris 的数据分布，会导致打到 Doris 的查询压力非常大。
 
-```
+```scala
 
 import java.util.Properties
 import org.apache.spark.SparkConf

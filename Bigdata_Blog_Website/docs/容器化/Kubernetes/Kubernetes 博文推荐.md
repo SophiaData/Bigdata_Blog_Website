@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 [Kubernetes Handbook——Kubernetes 中文指南/云原生应用架构实战手册](https://jimmysong.io/kubernetes-handbook/)
 
 [从Docker到Kubernetes进阶](https://www.qikqiak.com/k8s-book/)

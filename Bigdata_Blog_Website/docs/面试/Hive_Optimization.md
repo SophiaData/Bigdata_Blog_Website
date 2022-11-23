@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+---
+
+# Hive_Optimization
+
 ## MapJoin
 
 当处理的数据量比较小的时候，可以采取 map join ，此时 hive 会将小表全部加载至内存中在 map 端进行 join 从而避免在 reducer 处理数据，如不符合 map join 条件，hive 解析器会将 join 

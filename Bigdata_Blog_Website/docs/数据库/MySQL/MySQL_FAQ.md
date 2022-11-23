@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+---
+
+# MySql_FAQ
+
 ## Q1: MySQL Error “Too many connections” and how to resolve it
 
 [解决方案原文](https://www.thegeekdiary.com/mysql-error-too-many-connections-and-how-to-resolve-it/)

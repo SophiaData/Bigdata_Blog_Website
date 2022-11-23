@@ -36,15 +36,14 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://sophiadata.github.io/bigdata-blog/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://sophiadata.github.io/bigdata-blog/',
+          postsPerPage: 5,
+          blogSidebarTitle: '全部博文',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -75,7 +74,17 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-        ],
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [
+            {
+             href: 'https://sophiadata.github.io/Bigdata_Blog_Website/docs/overview',
+             label: '1.0',
+                  },
+               ],
+            },
+         ],
       },
       footer: {
         style: 'dark',
@@ -94,7 +103,7 @@ const config = {
             items: [
               {
                 label: 'Issues',
-                href: 'https://github.com/SophiaData/Bigdata_Note/issues',
+                href: 'https://github.com/SophiaData/Bigdata_Blog_Website/issues',
               },
             ],
           },

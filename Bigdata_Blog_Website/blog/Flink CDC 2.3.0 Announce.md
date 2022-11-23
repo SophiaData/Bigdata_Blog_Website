@@ -1,6 +1,7 @@
 ---
 authors: 
   - name: skylines
+    url: https://github.com/rookiegao
 title: Flink CDC 2.3.0 Announce
 date: 2022-11-18 21:47:11
 tags: [数据集成]
@@ -10,6 +11,7 @@ description: Flink CDC 2.3.0 近期发布
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/4ac4fbb159234e04acd3b6fe865ce53f.png)
 
+<!--truncate-->
 
 # 新连接器
 

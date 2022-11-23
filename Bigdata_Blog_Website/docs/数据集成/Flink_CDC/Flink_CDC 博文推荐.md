@@ -76,3 +76,5 @@ by 曾庆东 @ 金地物业 文章：https://mp.weixin.qq.com/s/Mfn-fFegb5wzI8BI
 
 《基于 Flink SQL CDC 的实时数据同步方案》
 by 云邪 @ 阿里 文章：https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视频：https://www.bilibili.com/video/BV1zt4y1D7kt 日期：2020年8月
+
+[FlinkCDC聚合mysql及pg表压入es实验报告](https://www.aliyundrive.com/s/XCm6aXfBfZC)

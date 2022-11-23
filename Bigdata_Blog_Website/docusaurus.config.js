@@ -36,8 +36,6 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://sophiadata.github.io/Bigdata_Blog_Website/',
         },
         blog: {
           showReadingTime: true,
@@ -46,8 +44,6 @@ const config = {
           postsPerPage: 5,
           blogSidebarTitle: '全部博文',
           blogSidebarCount: 'ALL',
-          editUrl:
-            'https://sophiadata.github.io/Bigdata_Blog_Website/Bigdata_Blog_Website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -74,7 +70,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/SophiaData/Bigdata_Blog_Website/Bigdata_Blog_Website',
+            href: 'https://github.com/SophiaData/Bigdata_Blog_Website',
             label: 'GitHub',
             position: 'right',
           },

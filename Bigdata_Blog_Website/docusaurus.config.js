@@ -80,7 +80,7 @@ const config = {
             dropdownItemsAfter: [
             {
              href: 'https://sophiadata.github.io/Bigdata_Blog_Website/docs/overview',
-             label: '1.0',
+             label: 'dev', // version test link,No practical significance
                   },
                ],
             },

@@ -74,7 +74,17 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-        ],
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [
+            {
+             href: 'https://sophiadata.github.io/Bigdata_Blog_Website/docs/overview',
+             label: 'current',
+                  },
+               ],
+            },
+         ],
       },
       footer: {
         style: 'dark',

@@ -80,7 +80,7 @@ const config = {
             dropdownItemsAfter: [
             {
              href: 'https://bigdata-note.readthedocs.io/en/latest/',
-             label: 'Deprecated Doc(Not recommended)', // Sphinx + GitHub + Read the doc 构建博客的存档 (停止更新)
+             label: 'Old', // Sphinx + GitHub + Read the doc 构建博客的存档 (停止更新)
                   },
                ],
             },

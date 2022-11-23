@@ -1,6 +1,5 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -24,7 +23,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    locales: ["zh-Hans", "en"],
   },
 
   presets: [
@@ -52,11 +51,25 @@ const config = {
     ],
   ],
 
-    plugins: [
+
+  plugins: [
       ['docusaurus-plugin-yandex-metrica', {
         counterID: '91340636',
       }],
-    ],
+   ],
+
+     themes: [
+       [
+         "@easyops-cn/docusaurus-search-local",
+         /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+         ({
+           hashed: true,
+           language: ["en", "zh"],
+           highlightSearchTermsOnTargetPage: true,
+           explicitSearchResultPath: true,
+         }),
+       ],
+     ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -79,6 +92,10 @@ const config = {
             href: 'https://github.com/SophiaData/Bigdata_Blog_Website',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            type: "localeDropdown",
+            position: "right",
           },
           {
             type: 'docsVersionDropdown',

@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+---
+
+# Hive_FAQ
+
 ## Q1: Hive 如何使用达梦数据库存储元数据信息？
 
 ![img](https://user-images.githubusercontent.com/34996528/167798676-40494b35-f3c6-4b70-8aea-3cbb15238458.png)

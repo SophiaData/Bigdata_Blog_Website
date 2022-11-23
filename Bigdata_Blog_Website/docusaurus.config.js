@@ -74,7 +74,17 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
-        ],
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            dropdownItemsAfter: [
+            {
+             href: 'https://bigdata-note.readthedocs.io/en/latest/',
+             label: 'Old', // Sphinx + GitHub + Read the doc 构建博客的存档 (停止更新)
+                  },
+               ],
+            },
+         ],
       },
       footer: {
         style: 'dark',

@@ -1,3 +1,9 @@
+---
+sidebar_position: 1
+---
+
+# Debezium_FAQ
+
 ## Q1 : Debezium for MySQL 的简单示例
 ```
  curl -H "Content-Type: application/json" -X POST -d  '{

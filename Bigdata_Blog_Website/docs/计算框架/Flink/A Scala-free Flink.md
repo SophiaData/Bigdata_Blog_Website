@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # A Scala-free Flink
 
 A detailed [blog post](https://flink.apache.org/2022/02/22/scala-free.html)

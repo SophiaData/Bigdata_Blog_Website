@@ -84,7 +84,7 @@ const config = {
         },
         items: [
           {to: '/docs/overview', label: 'Overview', position: 'left'},
-          {to: '/document_collection', label: 'Document_Collection', position: 'left'},
+//          {to: '/document_collection', label: 'Document_Collection', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/SophiaData/Bigdata_Blog_Website',

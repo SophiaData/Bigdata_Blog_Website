@@ -15,6 +15,10 @@
     "message": "Overview",
     "description": "The label of footer link with label=Overview linking to /docs/overview"
   },
+  "link.item.label.Document_Collection": {
+    "message": "Document_Collection",
+    "description": "The label of footer link with label=Document_Collection linking to /document"
+  },
   "link.item.label.Issues": {
     "message": "Issues",
     "description": "The label of footer link with label=Issues linking to https://github.com/SophiaData/Bigdata_Blog_Website/issues"

@@ -32,6 +32,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: "docs",
+          routeBasePath: "/docs",
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -58,6 +60,18 @@ const config = {
       ['docusaurus-plugin-yandex-metrica', {
         counterID: '91340636',
       }],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'document',
+                path: 'document',
+                routeBasePath: '/document',
+                include: ['*.md'],
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+                sidebarPath: require.resolve('./sidebars.js'),
+            },
+        ],
    ],
 
      themes: [
@@ -84,7 +98,7 @@ const config = {
         },
         items: [
           {to: '/docs/overview', label: 'Overview', position: 'left'},
-//          {to: '/document_collection', label: 'Document_Collection', position: 'left'},
+          {to: '/document/overview', label: 'Document_Collection', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/SophiaData/Bigdata_Blog_Website',

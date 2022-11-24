@@ -4,7 +4,7 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.容器化": {
-    "message": "容器化",
+    "message": "Containerization",
     "description": "The label for category 容器化 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Kubernetes": {
@@ -12,11 +12,11 @@
     "description": "The label for category Kubernetes in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.工具配置": {
-    "message": "工具配置",
+    "message": "Tool configuration",
     "description": "The label for category 工具配置 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.应用配置管理": {
-    "message": "应用配置管理",
+    "message": "Application configuration management",
     "description": "The label for category 应用配置管理 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.ETCD": {
@@ -28,7 +28,7 @@
     "description": "The label for category Zookeeper in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.数据仓库": {
-    "message": "数据仓库",
+    "message": "data warehouse ",
     "description": "The label for category 数据仓库 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.DataWareHouse_Blog": {
@@ -40,7 +40,7 @@
     "description": "The label for category DataWareHouse_Project in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.数据库": {
-    "message": "数据库",
+    "message": "database",
     "description": "The label for category 数据库 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Doris": {
@@ -76,7 +76,7 @@
     "description": "The label for category StarRocks in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.数据调度&管理平台": {
-    "message": "数据调度&管理平台",
+    "message": "Data scheduling&management platform",
     "description": "The label for category 数据调度&管理平台 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Airflow": {
@@ -108,7 +108,7 @@
     "description": "The label for category TIS in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.数据集成": {
-    "message": "数据集成",
+    "message": "data Integration ",
     "description": "The label for category 数据集成 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Debezium": {
@@ -128,7 +128,7 @@
     "description": "The label for category SeaTunnel in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.消息系统": {
-    "message": "消息系统",
+    "message": "Message system",
     "description": "The label for category 消息系统 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Pulsar": {
@@ -136,11 +136,11 @@
     "description": "The label for category Pulsar in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.电子书": {
-    "message": "电子书",
+    "message": "e-book",
     "description": "The label for category 电子书 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.计算框架": {
-    "message": "计算框架",
+    "message": "Calculation framework",
     "description": "The label for category 计算框架 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Flink": {
@@ -152,7 +152,7 @@
     "description": "The label for category Spark in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.面试": {
-    "message": "面试",
+    "message": "interview",
     "description": "The label for category 面试 in sidebar tutorialSidebar"
   }
 }

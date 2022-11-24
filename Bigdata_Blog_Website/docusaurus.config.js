@@ -58,17 +58,6 @@ const config = {
       ['docusaurus-plugin-yandex-metrica', {
         counterID: '91340636',
       }],
-      [
-        '@docusaurus/plugin-content-docs',
-          {
-            id: 'document_collection',
-            path: 'document_collection',
-            routeBasePath: '/document_collection',
-            showLastUpdateAuthor: true,
-            showLastUpdateTime: true,
-            sidebarPath: require.resolve('./sidebars.js'),
-          },
-       ],
    ],
 
      themes: [

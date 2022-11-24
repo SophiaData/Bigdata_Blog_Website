@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+# Flume 博文推荐
+
 [flume的TaildirSource介绍及升级改造](https://blog.csdn.net/m0_37739193/article/details/72962192)
 
 [重磅：Flume1-7结合kafka讲解](https://cloud.tencent.com/developer/article/1032848)

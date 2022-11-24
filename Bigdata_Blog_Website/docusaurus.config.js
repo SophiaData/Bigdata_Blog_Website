@@ -35,6 +35,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -56,6 +58,17 @@ const config = {
       ['docusaurus-plugin-yandex-metrica', {
         counterID: '91340636',
       }],
+      [
+        '@docusaurus/plugin-content-docs',
+          {
+            id: 'document_collection',
+            path: 'document_collection',
+            routeBasePath: '/document_collection',
+            showLastUpdateAuthor: true,
+            showLastUpdateTime: true,
+            sidebarPath: require.resolve('./sidebars.js'),
+          },
+       ],
    ],
 
      themes: [
@@ -81,12 +94,8 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'overview',
-            position: 'left',
-            label: 'Overview',
-          },
+          {to: '/docs/overview', label: 'Overview', position: 'left'},
+          {to: '/document_collection', label: 'Document_Collection', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/SophiaData/Bigdata_Blog_Website',

@@ -1,0 +1,158 @@
+{
+  "version.label": {
+    "message": "1.0",
+    "description": "The label for version 1.0"
+  },
+  "sidebar.tutorialSidebar.category.容器化": {
+    "message": "容器化",
+    "description": "The label for category 容器化 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Kubernetes": {
+    "message": "Kubernetes",
+    "description": "The label for category Kubernetes in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.工具配置": {
+    "message": "工具配置",
+    "description": "The label for category 工具配置 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.应用配置管理": {
+    "message": "应用配置管理",
+    "description": "The label for category 应用配置管理 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.ETCD": {
+    "message": "ETCD",
+    "description": "The label for category ETCD in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Zookeeper": {
+    "message": "Zookeeper",
+    "description": "The label for category Zookeeper in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.数据仓库": {
+    "message": "数据仓库",
+    "description": "The label for category 数据仓库 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.DataWareHouse_Blog": {
+    "message": "DataWareHouse_Blog",
+    "description": "The label for category DataWareHouse_Blog in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.DataWareHouse_Project": {
+    "message": "DataWareHouse_Project",
+    "description": "The label for category DataWareHouse_Project in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.数据库": {
+    "message": "数据库",
+    "description": "The label for category 数据库 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Doris": {
+    "message": "Doris",
+    "description": "The label for category Doris in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Greenplum": {
+    "message": "Greenplum",
+    "description": "The label for category Greenplum in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Hbase": {
+    "message": "Hbase",
+    "description": "The label for category Hbase in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Hive": {
+    "message": "Hive",
+    "description": "The label for category Hive in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Hudi": {
+    "message": "Hudi",
+    "description": "The label for category Hudi in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.MySQL": {
+    "message": "MySQL",
+    "description": "The label for category MySQL in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Oracle": {
+    "message": "Oracle",
+    "description": "The label for category Oracle in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.StarRocks": {
+    "message": "StarRocks",
+    "description": "The label for category StarRocks in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.数据调度&管理平台": {
+    "message": "数据调度&管理平台",
+    "description": "The label for category 数据调度&管理平台 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Airflow": {
+    "message": "Airflow",
+    "description": "The label for category Airflow in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Calcite": {
+    "message": "Calcite",
+    "description": "The label for category Calcite in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Dinky": {
+    "message": "Dinky",
+    "description": "The label for category Dinky in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Dolphinscheduler": {
+    "message": "Dolphinscheduler",
+    "description": "The label for category Dolphinscheduler in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.InLong": {
+    "message": "InLong",
+    "description": "The label for category InLong in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.StreamPark": {
+    "message": "StreamPark",
+    "description": "The label for category StreamPark in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.TIS": {
+    "message": "TIS",
+    "description": "The label for category TIS in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.数据集成": {
+    "message": "数据集成",
+    "description": "The label for category 数据集成 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Debezium": {
+    "message": "Debezium",
+    "description": "The label for category Debezium in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Flink_CDC": {
+    "message": "Flink_CDC",
+    "description": "The label for category Flink_CDC in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Flume": {
+    "message": "Flume",
+    "description": "The label for category Flume in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.SeaTunnel": {
+    "message": "SeaTunnel",
+    "description": "The label for category SeaTunnel in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.消息系统": {
+    "message": "消息系统",
+    "description": "The label for category 消息系统 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Pulsar": {
+    "message": "Pulsar",
+    "description": "The label for category Pulsar in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.电子书": {
+    "message": "电子书",
+    "description": "The label for category 电子书 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.计算框架": {
+    "message": "计算框架",
+    "description": "The label for category 计算框架 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Flink": {
+    "message": "Flink",
+    "description": "The label for category Flink in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Spark": {
+    "message": "Spark",
+    "description": "The label for category Spark in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.面试": {
+    "message": "面试",
+    "description": "The label for category 面试 in sidebar tutorialSidebar"
+  }
+}

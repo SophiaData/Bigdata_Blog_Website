@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 ---
+# Flink CDC 博文推荐 
 
 《三步玩转：如何通过Flink OceanBase CDC连接器快速查询数据》
 by Amber 宝宝 文章：https://mp.weixin.qq.com/s/-OhnksTqhjwr_LzriXEhmQ 日期：2022年10月

@@ -1,6 +1,5 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -24,7 +23,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    locales: ["zh-Hans", "en"],
   },
 
   presets: [
@@ -33,9 +32,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: "docs",
+          routeBasePath: "/docs",
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -52,11 +55,37 @@ const config = {
     ],
   ],
 
-    plugins: [
+
+  plugins: [
       ['docusaurus-plugin-yandex-metrica', {
         counterID: '91340636',
       }],
-    ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'document',
+                path: 'document',
+                routeBasePath: '/document',
+                include: ['*.md'],
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+                sidebarPath: require.resolve('./sidebars.js'),
+            },
+        ],
+   ],
+
+     themes: [
+       [
+         "@easyops-cn/docusaurus-search-local",
+         /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+         ({
+           hashed: true,
+           language: ["en", "zh"],
+           highlightSearchTermsOnTargetPage: true,
+           explicitSearchResultPath: true,
+         }),
+       ],
+     ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -68,17 +97,17 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'overview',
-            position: 'left',
-            label: 'Overview',
-          },
+          {to: '/docs/overview', label: 'Overview', position: 'left'},
+          {to: '/document/overview', label: 'Document_Collection', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/SophiaData/Bigdata_Blog_Website',
             label: 'GitHub',
             position: 'right',
+          },
+          {
+            type: "localeDropdown",
+            position: "right",
           },
           {
             type: 'docsVersionDropdown',

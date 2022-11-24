@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[7570],{8974:a=>{a.exports=JSON.parse('{"permalink":"/Bigdata_Blog_Website/en/blog/tags/data-integration","page":1,"postsPerPage":5,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

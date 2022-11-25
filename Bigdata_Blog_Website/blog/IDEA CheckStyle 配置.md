@@ -2,7 +2,7 @@
 authors:
 - name: skylines
   url: https://github.com/rookiegao
-  tags: [工具配置]
+tags: [工具配置]
 ---
 
 # IDEA CheckStyle 配置

@@ -2,7 +2,7 @@
 authors:
 - name: skylines
   url: https://github.com/rookiegao
-  tags: [数据库, Doris]
+tags: [数据库, Doris]
 ---
 
 # Doris集成其他系统

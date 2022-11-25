@@ -5,7 +5,7 @@ authors:
 tags: [数据库, Doris]
 ---
 
-# Doris集成其他系统
+# Doris 集成其他系统
 
 准备表和数据
 

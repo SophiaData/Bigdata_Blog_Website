@@ -10,7 +10,7 @@ tags: [工具配置]
 日常开发通常需要配置 code style ，而 idea 无疑是最受欢迎的开发工具之一，下面介绍如何应用 checkstyle 插件
 
 ## 1 下载插件
-
+<!--truncate-->
 ![img](https://user-images.githubusercontent.com/34996528/166152027-93d88971-8308-4867-97ed-97da085577b5.png)
 
 ## 2 选择 checkstyle 版本

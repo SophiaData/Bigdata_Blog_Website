@@ -1,5 +1,0 @@
----
-sidebar_position: 1
----
-
-[etcd 官网](https://etcd.io/docs/v3.5/)

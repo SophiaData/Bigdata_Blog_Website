@@ -18,5 +18,17 @@
   "item.label.Document_Collection": {
     "message": "Document_Collection",
     "description": "Navbar item with label Document_Collection"
+  },
+  "item.label.Note": {
+    "message": "Note",
+    "description": "Navbar item with label Note"
+  },
+  "item.label.Blog recommendation": {
+    "message": "Blog recommendation",
+    "description": "Navbar item with label Blog recommendation"
+  },
+  "item.label.Framework learning": {
+    "message": "Framework learning",
+    "description": "Navbar item with label Framework learning"
   }
 }

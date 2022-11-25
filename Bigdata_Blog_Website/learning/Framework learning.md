@@ -10,15 +10,15 @@ Official courses and training courses of various frameworks
 
 ### Kubernetes
 
-[云原生Java架构师的第一课K8s+Docker+KubeSphere+DevOps视频教程](https://www.bilibili.com/video/BV13Q4y1C7hS?spm_id_from=333.999.0.0)
+[云原生 Java 架构师的第一课 K8s + Docker + KubeSphere + DevOps 视频教程](https://www.bilibili.com/video/BV13Q4y1C7hS?spm_id_from=333.999.0.0)
 
-[<尚硅谷>Kubernetes（k8s）入门到实战教程丨全新升级完整版](https://www.bilibili.com/video/BV1GT4y1A756?spm_id_from=333.788.b_636f6d6d656e74.19)
+[Kubernetes（k8s）入门到实战教程丨全新升级完整版](https://www.bilibili.com/video/BV1GT4y1A756?spm_id_from=333.788.b_636f6d6d656e74.19)
 
 ## 应用配置管理
 
 ### ETCD
 
-[etcd 官网](https://etcd.io/docs/v3.5/)
+[ETCD 官网](https://etcd.io/docs/v3.5/)
 
 ### Zookeeper
 
@@ -28,27 +28,27 @@ Official courses and training courses of various frameworks
 
 [深圳地铁大数据客流分析系统](https://gitee.com/geekyouth/SZT-bigdata#https://gitee.com/link?target=https%3A%2F%2Fgithub.com%2Fgeekyouth%2FSZT-bigdata)
 
-[【尚硅谷】大数据项目之Flink实时数仓3.0（抢先版）-上](https://www.bilibili.com/video/BV1PA4y1S7Yz?spm_id_from=333.999.0.0)
+[大数据项目之 Flink 实时数仓 3.0（抢先版）-上](https://www.bilibili.com/video/BV1PA4y1S7Yz?spm_id_from=333.999.0.0)
 
-[【尚硅谷】大数据项目之Flink实时数仓3.0（抢先版）-下](https://www.bilibili.com/video/BV1oY4y1t7GB?spm_id_from=333.999.0.0)
+[大数据项目之 Flink 实时数仓 3.0（抢先版）-下](https://www.bilibili.com/video/BV1oY4y1t7GB?spm_id_from=333.999.0.0)
 
 ## 数据库
 
 ### Doris
 
-[【尚硅谷】大数据Apache Doris教程](https://www.bilibili.com/video/BV15S4y1h7Kt?p=30&spm_id_from=pageDriver)
+[大数据 Apache Doris 教程](https://www.bilibili.com/video/BV15S4y1h7Kt?p=30&spm_id_from=pageDriver)
 
 [Doris 官网文档](https://doris.apache.org/zh-CN/)
 
-[Doris使用手册重磅来袭！（八万字纯干货，建议收藏）——上篇](https://mp.weixin.qq.com/s/ra5m5NT0c9vqRPQw9rR7Ew)
+[Doris 使用手册重磅来袭！（八万字纯干货，建议收藏）——上篇](https://mp.weixin.qq.com/s/ra5m5NT0c9vqRPQw9rR7Ew)
 
-[Doris使用手册重磅来袭！（八万字纯干货，建议收藏）——下篇](https://mp.weixin.qq.com/s/N3AsTZqXapNgZB8tt5H-4w)
+[Doris 使用手册重磅来袭！（八万字纯干货，建议收藏）——下篇](https://mp.weixin.qq.com/s/N3AsTZqXapNgZB8tt5H-4w)
 
 ### Greenplum
 
-[Greenplum中文社区官网](https://cn.greenplum.org/)
+[Greenplum 中文社区官网](https://cn.greenplum.org/)
 
-[Greenplum集群安装配置及最佳实践(官方版)](https://www.bilibili.com/video/BV1XJ411L7Gv/?spm_id_from=333.788.recommend_more_video.3)
+[Greenplum 集群安装配置及最佳实践(官方版)](https://www.bilibili.com/video/BV1XJ411L7Gv/?spm_id_from=333.788.recommend_more_video.3)
 
 ### Hbase
 
@@ -78,23 +78,23 @@ Official courses and training courses of various frameworks
 
 [Airflow 中文文档](https://airflow-doc-zh.readthedocs.io/zh_CN/latest/)
 
-[Airflow 基础系列 - 01 (Airflow组件)](https://mp.weixin.qq.com/s/3I2tVpoA3dfWbdF9hxxLvw)
+[Airflow 基础系列 - 01 (Airflow 组件)](https://mp.weixin.qq.com/s/3I2tVpoA3dfWbdF9hxxLvw)
 
-[Airflow 基础系列 - 02 (Executor详解)](https://mp.weixin.qq.com/s/ij9ezQneaqEzwz8i0x-7-w)
+[Airflow 基础系列 - 02 (Executor 详解)](https://mp.weixin.qq.com/s/ij9ezQneaqEzwz8i0x-7-w)
 
-[Airflow 基础系列 - 03 （Operators介绍)](https://mp.weixin.qq.com/s/_5YMyDnq-zlKDyoyVy4yfA)
+[Airflow 基础系列 - 03 （Operators 介绍)](https://mp.weixin.qq.com/s/_5YMyDnq-zlKDyoyVy4yfA)
 
 [Airflow 基础系列 - 04 （调度周期介绍)](https://mp.weixin.qq.com/s/lQk2IwEms0-2ajtpVSfDaQ)
 
 [Airflow 基础系列 - 05 （自定义 Operator）](https://mp.weixin.qq.com/s/2AAiW0HsPjGgs8CLxojD9g)
 
-[Airflow sensor简介](https://mp.weixin.qq.com/s/mFSy2jZM0qzxdvXPsxED0w)
+[Airflow sensor 简介](https://mp.weixin.qq.com/s/mFSy2jZM0qzxdvXPsxED0w)
 
 [Airflow 基础系列 - 07 （SubDAG）](https://mp.weixin.qq.com/s/Uvlz_0cEkatXG3WmyLYYsA)
 
 ### Calcite
 
-[calcite doc](https://calcite.apache.org/docs/)
+[Calcite Doc](https://calcite.apache.org/docs/)
 
 ### Dinky
 
@@ -102,11 +102,11 @@ Official courses and training courses of various frameworks
 
 ### Dolphinscheduler
 
-[海豚调度官网稳定版文档](https://dolphinscheduler.apache.org/zh-cn/docs/latest/user_doc/about/introduction.html)
+[Dolphinscheduler 官网文档](https://dolphinscheduler.apache.org/zh-cn/docs/latest/user_doc/about/introduction.html)
 
 ### InLong
 
-[InLong官网](https://inlong.apache.org/zh-CN/)
+[InLong 官网](https://inlong.apache.org/zh-CN/)
 
 ### StreamPark
 
@@ -114,7 +114,7 @@ Official courses and training courses of various frameworks
 
 ### TIS
 
-[基于DataX和Flink-CDC的DataOps数据同步中台TIS](http://tis.pub/docs/)
+[基于 DataX 和 Flink-CDC 的 DataOps 数据同步中台 TIS](http://tis.pub/docs/)
 
 ## 数据集成
 
@@ -124,11 +124,11 @@ Official courses and training courses of various frameworks
 
 ### Flink_CDC
 
-[Flink CDC Doc Master分支](https://ververica.github.io/flink-cdc-connectors/master/index.html)
+[Flink CDC Doc Master 分支](https://ververica.github.io/flink-cdc-connectors/master/index.html)
 
 ### Flume
 
-[flume官网文档](https://flume.apache.org/releases/content/1.9.0/FlumeUserGuide.html)
+[flume 官网文档](https://flume.apache.org/releases/content/1.9.0/FlumeUserGuide.html)
 
 ### SeaTunnel
 
@@ -138,9 +138,9 @@ Official courses and training courses of various frameworks
 
 ### Pulsar
 
-[pulsar官方文档](https://pulsar.apache.org/docs/en/getting-started-standalone/)
+[pulsar 官方文档](https://pulsar.apache.org/docs/en/getting-started-standalone/)
 
-[Apache Pulsar视频教程](https://www.bilibili.com/video/BV1CF411v7Dh?spm_id_from=333.999.0.0)
+[Apache Pulsar 视频教程](https://www.bilibili.com/video/BV1CF411v7Dh?spm_id_from=333.999.0.0)
 
 ### Kafka
 
@@ -152,9 +152,9 @@ Official courses and training courses of various frameworks
 
 [Flink 中文社区](https://flink-learning.org.cn/)
 
-[Flink Doc Master分支](https://nightlies.apache.org/flink/flink-docs-master/)
+[Flink Doc Master 分支](https://nightlies.apache.org/flink/flink-docs-master/)
 
-[Flink slack 官方频道](https://app.slack.com/client/T03GEQSEJAC/browse-channels)
+[Flink Slack 官方频道](https://app.slack.com/client/T03GEQSEJAC/browse-channels)
 
 [欢迎加入 Apache Flink Slack 空间](https://mp.weixin.qq.com/s/lQ7_TgBu28zvCNOtB-XCgA)
 

@@ -12,7 +12,7 @@ A detailed [blog post](https://flink.apache.org/2022/02/22/scala-free.html)
 already explains the ins and outs of why Scala users can now use the Flink Java API with any Scala version (including Scala 3).
 
 In the end, removing Scala is just part of a larger effort of cleaning up and updating various technologies from the Flink ecosystem.
-
+<!--truncate-->
 ## 博文翻译
 
 ### 类路径和 Scala

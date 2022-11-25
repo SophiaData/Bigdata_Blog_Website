@@ -32,6 +32,7 @@ insert into table1 values
 (4,3,'bush',3), 
 (5,3,'helen',3);
 ```
+<!--truncate-->
 ## Spark 读写 Doris
 
 ###  准备  Spark 环境

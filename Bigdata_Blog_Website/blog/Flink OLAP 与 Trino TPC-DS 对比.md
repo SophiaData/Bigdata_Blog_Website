@@ -16,7 +16,7 @@ authors:
 
 ![img](https://user-images.githubusercontent.com/34996528/167282548-0d1c4754-e895-454e-9ad1-0d1ad00df6a8.png)
 
-
+<!--truncate-->
 > 图示链接
 
 [1] https://github.com/ververica/flink-sql-gateway

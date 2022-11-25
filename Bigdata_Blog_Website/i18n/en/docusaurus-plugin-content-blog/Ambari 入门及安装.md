@@ -4,7 +4,7 @@ authors:
     url: https://blog.csdn.net/weixin_40898246/article/details/109175222?spm=1001.2014.3001.5501
 title: Ambari Introduction and installation
 date: 2020-11-07 18:11:11
-tags: [管理平台]
+tags: [Management platform]
 keywords: [Ambari]
 description: 使用 Ambari 对 apache 框架进行管理
 ---

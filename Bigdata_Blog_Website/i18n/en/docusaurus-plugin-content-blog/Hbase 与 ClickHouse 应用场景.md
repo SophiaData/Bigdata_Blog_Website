@@ -2,7 +2,7 @@
 authors:
 - name: skylines
   url: https://github.com/rookiegao
-tags: [数据仓库]
+tags: [data warehouse]
 ---
 
 # Hbase and ClickHouse application scenarios

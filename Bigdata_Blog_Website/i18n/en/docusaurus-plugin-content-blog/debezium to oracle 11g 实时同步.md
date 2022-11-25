@@ -4,7 +4,7 @@ authors:
     url: https://blog.csdn.net/weixin_40898246/article/details/120880414?spm=1001.2014.3001.5501
 title: debezium to oracle 11g Realtime synchronization
 date: 2021-11-21 09:24:31
-tags: [数据集成]
+tags: [data Integration]
 keywords: [Debeziium]
 description: 使用 debezium 对 oracle 数据进行采集
 ---

@@ -2,7 +2,7 @@
 authors:
 - name: skylines
   url: https://github.com/rookiegao
-tags: [Flink, 计算框架]
+tags: [Flink, Calculation framework]
 title: Comparison between Flink OLAP and Trino TPC-DS
 ---
 

@@ -2,7 +2,7 @@
 authors:
 - name: skylines
   url: https://github.com/rookiegao
-tags: [数据仓库, 数据湖]
+tags: [data warehouse, Data Lake]
 ---
 
 # Offline digital Warehouse, real-time digital Warehouse and DataLakeHouse

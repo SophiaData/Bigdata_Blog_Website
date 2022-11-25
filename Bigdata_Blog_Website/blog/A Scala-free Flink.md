@@ -2,7 +2,7 @@
 authors:
 - name: skylines
   url: https://github.com/rookiegao
-  tags: [Flink,计算框架]
+  tags: [Flink, 计算框架]
 ---
 
 # A Scala-free Flink

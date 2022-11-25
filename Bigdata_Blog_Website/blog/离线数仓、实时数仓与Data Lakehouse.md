@@ -2,7 +2,7 @@
 authors:
 - name: skylines
   url: https://github.com/rookiegao
-  tags: [数据仓库,数据湖]
+  tags: [数据仓库, 数据湖]
 ---
 
 # 离线数仓、实时数仓与 DataLakeHouse

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[6769],{6816:a=>{a.exports=JSON.parse('{"label":"Management platform","permalink":"/Bigdata_Blog_Website/en/blog/tags/management-platform","allTagsPath":"/Bigdata_Blog_Website/en/blog/tags","count":2}')}}]);

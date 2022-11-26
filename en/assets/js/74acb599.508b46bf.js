@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[145],{9564:a=>{a.exports=JSON.parse('{"label":"Data Lake","permalink":"/Bigdata_Blog_Website/en/blog/tags/data-lake","allTagsPath":"/Bigdata_Blog_Website/en/blog/tags","count":1}')}}]);

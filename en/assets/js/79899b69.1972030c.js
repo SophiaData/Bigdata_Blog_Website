@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[6759],{9256:a=>{a.exports=JSON.parse('{"label":"database","permalink":"/Bigdata_Blog_Website/en/blog/tags/database","allTagsPath":"/Bigdata_Blog_Website/en/blog/tags","count":1}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[3655],{277:a=>{a.exports=JSON.parse('{"label":"data warehouse","permalink":"/Bigdata_Blog_Website/en/blog/tags/data-warehouse","allTagsPath":"/Bigdata_Blog_Website/en/blog/tags","count":5}')}}]);

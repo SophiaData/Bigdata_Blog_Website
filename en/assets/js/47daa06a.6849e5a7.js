@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[7287],{2533:a=>{a.exports=JSON.parse('{"permalink":"/Bigdata_Blog_Website/en/blog/tags/calculation-framework","page":1,"postsPerPage":5,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

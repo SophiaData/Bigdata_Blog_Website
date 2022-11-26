@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[3933],{8550:a=>{a.exports=JSON.parse('{"permalink":"/Bigdata_Blog_Website/en/blog/tags/management-platform","page":1,"postsPerPage":5,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

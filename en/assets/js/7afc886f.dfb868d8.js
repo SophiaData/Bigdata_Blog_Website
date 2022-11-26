@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[7609],{3918:a=>{a.exports=JSON.parse('{"label":"Tool configuration","permalink":"/Bigdata_Blog_Website/en/blog/tags/tool-configuration","allTagsPath":"/Bigdata_Blog_Website/en/blog/tags","count":1}')}}]);

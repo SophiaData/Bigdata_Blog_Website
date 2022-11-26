@@ -28,7 +28,7 @@
     "description": "The label for category Zookeeper in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.数据仓库": {
-    "message": "data warehouse ",
+    "message": "data warehouse",
     "description": "The label for category 数据仓库 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.DataWareHouse_Blog": {
@@ -108,7 +108,7 @@
     "description": "The label for category TIS in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.数据集成": {
-    "message": "data Integration ",
+    "message": "data Integration",
     "description": "The label for category 数据集成 in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Debezium": {
@@ -154,5 +154,9 @@
   "sidebar.tutorialSidebar.category.面试": {
     "message": "interview",
     "description": "The label for category 面试 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.大数据框架_FAQ": {
+    "message": "BigData Framework FAQ",
+    "description": "The label for category 大数据框架FAQ in sidebar tutorialSidebar"
   }
 }

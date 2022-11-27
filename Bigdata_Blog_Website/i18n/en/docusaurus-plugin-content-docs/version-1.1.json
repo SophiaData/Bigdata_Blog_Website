@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "1.1",
+    "description": "The label for version 1.1"
+  },
+  "sidebar.tutorialSidebar.category.大数据框架_FAQ": {
+    "message": "BigData Framework_FAQ",
+    "description": "The label for category 大数据框架_FAQ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.电子书": {
+    "message": "e-book",
+    "description": "The label for category 电子书 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.面试": {
+    "message": "interview",
+    "description": "The label for category 面试 in sidebar tutorialSidebar"
+  }
+}

@@ -6,4 +6,4 @@ sidebar_position: 1
 
 This blog will collect as much knowledge and cases about bigdata as possible
 
-![img.png](img.png)
+![img](../img/img_1.png)

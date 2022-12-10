@@ -1,3 +1,10 @@
+---
+authors:
+- name: skylines
+  url: https://github.com/rookiegao
+  tags: [数据集成]
+---
+
 # 技术思想
 
 > 利用 mysql catalog，mysql cdc，flink jdbc 等技术实现 mysql 整库迁移至下游数据库，这里是示范 mysql to mysql ，其他 sink 组件可自行扩展实现。

@@ -16,9 +16,10 @@ on:
 
 jobs:
   merge:
-    runs-on: ubuntu-latest
     permissions:
        write-all
+    runs-on: ubuntu-latest
+
     name: Merge
     steps:
     - name: Integration check
@@ -27,7 +28,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         test: false
         reviewers: true
-        labels: ready, merge
+        labels: ready
         blocking_labels: do not merge
         checks_enabled: true
         method: squash

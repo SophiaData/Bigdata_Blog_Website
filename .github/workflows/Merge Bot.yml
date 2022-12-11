@@ -18,6 +18,10 @@ jobs:
   merge:
     runs-on: ubuntu-latest
     name: Merge
+    permissions:
+      actions: write
+      contents: write
+      security-events: write
     steps:
     - name: Integration check
       uses: squalrus/merge-bot@v0.1.0

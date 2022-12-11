@@ -20,13 +20,13 @@ jobs:
     name: Merge
     steps:
     - name: Integration check
-      uses: squalrus/merge-bot@master
+      uses: squalrus/merge-bot@v0.1.0
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         test: false
         reviewers: true
-        labels: ready
+        labels: ready, merge
         blocking_labels: do not merge
-        checks_enabled: false
+        checks_enabled: true
         method: squash
         delete_source_branch: false

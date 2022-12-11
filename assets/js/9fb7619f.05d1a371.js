@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[8367],{4022:e=>{e.exports=JSON.parse('{"permalink":"/Bigdata_Blog_Website/blog","page":1,"postsPerPage":5,"totalPages":3,"totalCount":15,"nextPage":"/Bigdata_Blog_Website/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

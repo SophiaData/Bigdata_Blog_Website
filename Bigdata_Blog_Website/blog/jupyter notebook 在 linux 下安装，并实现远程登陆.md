@@ -22,7 +22,7 @@ tags: [jupyter]
 
 首先进行下载 [Anaconda installer for Linux](https://www.anaconda.com/download/#linux)
 编写时Anaconda版本已经支持到 Python3.7 (请自行安装)
-
+<!--truncate-->
  2. 下载完成后可以进行 MD5 或 SHA-256 验证
  
  

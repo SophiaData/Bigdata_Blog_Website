@@ -2,7 +2,8 @@
 authors:
 - name: skylines
   url: https://github.com/rookiegao
-  tags: [数据集成]
+title: Mysql 整库同步  
+tags: [数据集成]
 ---
 
 # 技术思想
@@ -10,7 +11,7 @@ authors:
 > 利用 mysql catalog，mysql cdc，flink jdbc 等技术实现 mysql 整库迁移至下游数据库，这里是示范 mysql to mysql ，其他 sink 组件可自行扩展实现。
 
 通过 flink ParameterTool，可以选择是整库同步还是多表亦或单表同步，可以设置全局并发，源表 mysql 参数，目标表 mysql 参数
-
+<!--truncate-->
 > 通过 sql Connection 实现自动建表逻辑 (mysql 数据类型众多，这里并没有测试所有的类型参数，如担心建表不成功，可手动建表，不影响程序运行)
 
 下游使用 flink jdbc 来实现，语法为 upsert 即幂等写入(重复数据只会写入一次)

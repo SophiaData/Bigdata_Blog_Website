@@ -9,7 +9,7 @@ on:
       - review_requested
       - synchronize
       - unlabeled
-  pull_request_review:
+  pull_request_target:
     types:
       - dismissed
       - submitted

@@ -110,7 +110,7 @@ const config = {
         },
         items: [
           {to: '/docs/overview', label: 'Note', position: 'left'},
-          {to: '/document/overview', label: 'Blog recommendation', position: 'left'},
+          {to: '/document/blog recommend', label: 'Blog recommendation', position: 'left'},
           {to: '/learning/Framework learning', label: 'Framework learning', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {

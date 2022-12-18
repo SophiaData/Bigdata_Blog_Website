@@ -72,18 +72,6 @@ const config = {
                 sidebarPath: require.resolve('./sidebars.js'),
             },
         ],
-         [
-             '@docusaurus/plugin-content-docs',
-             {
-                id: 'learning',
-                path: 'learning',
-                routeBasePath: '/learning',
-                include: ['*.md'],
-                showLastUpdateAuthor: true,
-                showLastUpdateTime: true,
-                sidebarPath: require.resolve('./sidebars.js'),
-             },
-         ],
    ],
 
      themes: [
@@ -111,7 +99,6 @@ const config = {
         items: [
           {to: '/docs/overview', label: 'Note', position: 'left'},
           {to: '/document/blog recommend', label: 'Blog recommendation', position: 'left'},
-          {to: '/learning/Framework learning', label: 'Framework learning', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/SophiaData/Bigdata_Blog_Website',

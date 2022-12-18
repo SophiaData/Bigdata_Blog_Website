@@ -1,11 +1,11 @@
 # blog recommend
 
-## Debezium_博文推荐
+## Debezium
 
 [debezium to oracle 11g 实时同步](https://blog.csdn.net/weixin_40898246/article/details/120880414)
 
 
-## Dinky 博文推荐
+## Dinky
 
 [Dinky 扩展 Phoenix 连接器使用分享](https://mp.weixin.qq.com/s/aXom6DbWz-hlo9CSNZ7N3A)
 
@@ -30,7 +30,7 @@
 [Dinky 扩展 Flink Redis 的实践分享](https://mp.weixin.qq.com/s/MDw1beO6cSoAQIZBIqP-Pg)
 
 
-## Doris 博文推荐
+## Doris
 
 > 按行业分类
 
@@ -133,7 +133,7 @@
 [特步集团基于 Apache Doris 的零售数据仓库项目实践](https://mp.weixin.qq.com/s/S_eJKHgei1dmCw3efRUDRw)
  
 
-### 按场景分类
+> 按场景分类
 
 #### 高并发查询
 
@@ -195,11 +195,11 @@
 
 [特步集团基于 Apache Doris 的零售数据仓库项目实践](https://mp.weixin.qq.com/s/S_eJKHgei1dmCw3efRUDRw)
 
-## Flink 博文推荐
+## Flink
 
 [官宣 Apache Flink 1.15 发布公告](https://mp.weixin.qq.com/s/Wza0etwPtXVm5SZ1a9kJlA)
 
-## Flink CDC 博文推荐 
+## Flink CDC 
 
 《三步玩转: 如何通过Flink OceanBase CDC连接器快速查询数据》
 by Amber 宝宝 文章: https://mp.weixin.qq.com/s/-OhnksTqhjwr_LzriXEhmQ 日期: 2022年10月
@@ -278,7 +278,7 @@ by 云邪 @ 阿里 文章: https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视
 
 [FlinkCDC聚合mysql及pg表压入es实验报告](https://www.aliyundrive.com/s/XCm6aXfBfZC)
 
-## Flume 博文推荐
+## Flume
 
 [flume的TaildirSource介绍及升级改造](https://blog.csdn.net/m0_37739193/article/details/72962192)
 
@@ -304,13 +304,13 @@ by 云邪 @ 阿里 文章: https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视
 
 [zabbix部署监控集群,自定义监控Flume(图片多，步骤详细)](https://mp.weixin.qq.com/s?__biz=MzA5NDYyMTU1NQ==&mid=2247483792&idx=1&sn=c62dd8b55d93f8ca719b3f5c5a703dd4&chksm=904a9b8ca73d129a9aafc350a16a8aa3e503a0e3d7d83cf12157584d3dd54987c5da8e23ffdc&mpshare=1&scene=2&srcid=&sharer_sharetime=1589357530719&sharer_shareid=fc2ac64b539199b1ffd7d5942fb8d736&from=timeline#rd)
 
-## Greenplum 博文推荐
+## Greenplum
 
 [Greenplum Resource Group 资源组管理实用指南](https://cn.greenplum.org/greenplum-resource-group-guide/)
 
 [Greenplum 是如何实现更新分片键的?](https://cn.greenplum.org/greenplum-split-update/)
 
-## Hudi 博文推荐
+## Hudi
 
 [基于Apache Hudi的多库多表实时入湖最佳实践](https://mp.weixin.qq.com/s/1WkzdrAH4MB5XS1Dp6FivA)
 
@@ -318,7 +318,7 @@ by 云邪 @ 阿里 文章: https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视
 
 [Apache Hudi 0.12.0版本重磅发布！](https://mp.weixin.qq.com/s/M09TkcojE2uHplMEiiSOnA)
 
-## Kubernetes 博文推荐
+## Kubernetes
 
 [Kubernetes Handbook——Kubernetes 中文指南/云原生应用架构实战手册](https://jimmysong.io/kubernetes-handbook/)
 
@@ -334,7 +334,7 @@ by 云邪 @ 阿里 文章: https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视
 
 [大数据平台Docker应用之路](https://blog.csdn.net/xgjianstart/article/details/54943531)
 
-## Pulsar 博文推荐
+## Pulsar
 
 [TGIP-CN 直播合集](https://www.bilibili.com/video/BV1T741147B6?from=search&seid=2966619854114248106)
 
@@ -359,10 +359,10 @@ by 云邪 @ 阿里 文章: https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视
 [互动连线｜Topic 与 Broker 之间的秘密](https://mp.weixin.qq.com/s?__biz=MzUxOTc4NDc2MQ==&mid=2247485035&idx=1&sn=da658fc04c9d3ff410c44cabd87f2adc&source=41#wechat_redirect)
 
 
-## SeaTunnel 博文推荐
+## SeaTunnel
 
 [百亿级数据同步，如何基于 SeaTunnel 的 ClickHouse 实现？](https://mp.weixin.qq.com/s/nrns7BYktyZR3tNawvMNTg)
 
-## StreamPark 博文推荐
+## StreamPark
 
 [StreamX 1.2.3 正式发布，诸多更新重磅来袭](https://mp.weixin.qq.com/s/K3X4ItucvUoUFCpeJNa9_g)

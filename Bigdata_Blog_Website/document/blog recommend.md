@@ -1,9 +1,11 @@
-# Debezium_博文推荐
+# blog recommend
+
+## Debezium_博文推荐
 
 [debezium to oracle 11g 实时同步](https://blog.csdn.net/weixin_40898246/article/details/120880414)
 
 
-# Dinky 博文推荐
+## Dinky 博文推荐
 
 [Dinky 扩展 Phoenix 连接器使用分享](https://mp.weixin.qq.com/s/aXom6DbWz-hlo9CSNZ7N3A)
 
@@ -28,13 +30,13 @@
 [Dinky 扩展 Flink Redis 的实践分享](https://mp.weixin.qq.com/s/MDw1beO6cSoAQIZBIqP-Pg)
 
 
-# Doris 博文推荐
+## Doris 博文推荐
 
 > 按行业分类
 
-## 互联网
+### 互联网
 
-### **京东**
+#### **京东**
 
 [Apache Doris 在京东广告平台的应用](https://mp.weixin.qq.com/s/RykptJrnPD0MzmJZe-QqHg)
 
@@ -54,9 +56,7 @@
 
 [货拉拉基于 Apache Doris 的 OLAP 体系演进](https://mp.weixin.qq.com/s/q2GrSnmDnEe1a1NSkZTs5Q)
 
-[]
-
-### **百度**
+#### **百度**
 
 [《Apache Doris 在百度商业大规模微服务全链路监控的实践》](https://mp.weixin.qq.com/s/k7CcCdHPTK1ZTDs_qKgh5w)
 
@@ -66,85 +66,82 @@
 
 [百度爱番番实时 CDP 建设实践](https://mp.weixin.qq.com/s/bqQd3oRscmlslS0YHBUf0w)
 
-### **知乎**
+#### **知乎**
 
 [知乎用户画像与实时数据的架构与实践](https://mp.weixin.qq.com/s/i5qbiKN6ruOk2Snpyy6DBw)
 
-### **小米**
+#### **小米**
 
 [基于Apache Doris的小米增长分析平台实践](https://mp.weixin.qq.com/s/WeNAItPJ4b7fsqW4kf0dSA)
 
 [Apache Doris 在小米集团的运维实践](https://mp.weixin.qq.com/s/4RNe1HYitoDwHgXeGGkZOw)
 
-### **美团**
+#### **美团**
 
 [美团外卖实时数仓建设实践](https://mp.weixin.qq.com/s/-JPWqa_-at7F5hZ0zekVSQ)
 
-### **搜狐**
+#### **搜狐**
 
 [搜狐智能媒体数据仓库体系建设实践](https://mp.weixin.qq.com/s/zKg6OWFBCRaCkT3kcGW_RA)
 
-### **快手**
+#### **快手**
 
 [Doris on ES在快手商业化的最佳实践](https://mp.weixin.qq.com/s/5Pc5ewVFWPgauG4hNLH9xw)
 
-### **中仑网络**
+#### **中仑网络**
 
 [Apache Doris 在中仑网络的应用实践](https://mp.weixin.qq.com/s/YRjLy27HfnxtKqxlUOR6Uw)
 
-### **一点资讯**
+#### **一点资讯**
 
 [Apache Doris在一点资讯自媒体平台的应用](https://mp.weixin.qq.com/s/K5eBUT6RjoQa0k6qJZs2VQ)
 
-## 教育
+### 教育
 
-### **新东方**
+#### **新东方**
 
 [新东方在线教育实时数仓的落地实践](https://mp.weixin.qq.com/s/XKUA8Kxyp6AwB2S5WkRzZA)
 
-### **作业帮**
+#### **作业帮**
 
 [Doris在作业帮实时数仓中的应用&实践](https://mp.weixin.qq.com/s/hjbMM8CbElO04VLN5cfJtQ)
 
-### **网易有道**
+#### **网易有道**
 
 [基于Doris的有道精品课数据中台建设实践](https://mp.weixin.qq.com/s/Gz-au9CHJ4lHrs5MkzeAJg)
 
-## **金融**
+### **金融**
 
-### **天冕科技**
+#### **天冕科技**
 
 [Apache Doris 在 WeLab实时大数据平台的应用实践](https://zhuanlan.zhihu.com/p/257183139)
 
-## 交通物流
+### 交通物流
 
-### **韵达**
+#### **韵达**
 
 [Apache Doris 在韵达物流领域的应用实践](https://mp.weixin.qq.com/s/Z_PhWk92ctZ7slz4SrVZ9Q)
 
-### **蜀海**
+#### **蜀海**
 
 [Apache Doris在蜀海供应链的实践](https://mp.weixin.qq.com/s/N5COGYkW63l0gW6sd21xjA)
 
-## 零售快消
+### 零售快消
 
-### **特步集团**
+#### **特步集团**
 
 [特步集团基于 Apache Doris 的零售数据仓库项目实践](https://mp.weixin.qq.com/s/S_eJKHgei1dmCw3efRUDRw)
+ 
 
-## 
+### 按场景分类
 
-
-
-# 按场景分类
-
-### 高并发查询
+#### 高并发查询
 
 [Apache Doris 在京东广告平台的应用](https://mp.weixin.qq.com/s/RykptJrnPD0MzmJZe-QqHg)
 
 [Apache Doris在京东双十一大促中的实践](https://mp.weixin.qq.com/s/8XnwJXm4kzq56SvElwL6kA)
 
-### OLAP多维分析
+#### OLAP多维分析
 
 [京东物流基于 Doris 的亿级数据自助探索应用](https://mp.weixin.qq.com/s/qVFa40yMg0_N9Lsb10ACQA)
 
@@ -158,11 +155,11 @@
 
 [Doris on ES在快手商业化的最佳实践](https://mp.weixin.qq.com/s/5Pc5ewVFWPgauG4hNLH9xw)
 
-### 日志监控
+#### 日志监控
 
 [《Apache Doris 在百度商业大规模微服务全链路监控的实践》](https://mp.weixin.qq.com/s/k7CcCdHPTK1ZTDs_qKgh5w)
 
-### 用户行为分析及用户画像
+#### 用户行为分析及用户画像
 
 [Doris在用户画像人群业务的应用](https://mp.weixin.qq.com/s/HGyIgqCIIXfeJtNdKbj-fQ)
 
@@ -174,7 +171,7 @@
 
 [基于Apache Doris的小米增长分析平台实践](https://mp.weixin.qq.com/s/WeNAItPJ4b7fsqW4kf0dSA)
 
-### 实时数仓
+#### 实时数仓
 
 [Apache Doris 在中仑网络的应用实践](https://mp.weixin.qq.com/s/YRjLy27HfnxtKqxlUOR6Uw)
 
@@ -190,7 +187,7 @@
 
 [Apache Doris 在 WeLab实时大数据平台的应用实践](https://zhuanlan.zhihu.com/p/257183139)
 
-### 数据仓库
+#### 数据仓库
 
 [搜狐智能媒体数据仓库体系建设实践](https://mp.weixin.qq.com/s/zKg6OWFBCRaCkT3kcGW_RA)
 
@@ -198,11 +195,11 @@
 
 [特步集团基于 Apache Doris 的零售数据仓库项目实践](https://mp.weixin.qq.com/s/S_eJKHgei1dmCw3efRUDRw)
 
-# Flink 博文推荐
+## Flink 博文推荐
 
 [官宣 Apache Flink 1.15 发布公告](https://mp.weixin.qq.com/s/Wza0etwPtXVm5SZ1a9kJlA)
 
-# Flink CDC 博文推荐 
+## Flink CDC 博文推荐 
 
 《三步玩转: 如何通过Flink OceanBase CDC连接器快速查询数据》
 by Amber 宝宝 文章: https://mp.weixin.qq.com/s/-OhnksTqhjwr_LzriXEhmQ 日期: 2022年10月
@@ -281,7 +278,7 @@ by 云邪 @ 阿里 文章: https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视
 
 [FlinkCDC聚合mysql及pg表压入es实验报告](https://www.aliyundrive.com/s/XCm6aXfBfZC)
 
-# Flume 博文推荐
+## Flume 博文推荐
 
 [flume的TaildirSource介绍及升级改造](https://blog.csdn.net/m0_37739193/article/details/72962192)
 
@@ -307,13 +304,13 @@ by 云邪 @ 阿里 文章: https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视
 
 [zabbix部署监控集群,自定义监控Flume(图片多，步骤详细)](https://mp.weixin.qq.com/s?__biz=MzA5NDYyMTU1NQ==&mid=2247483792&idx=1&sn=c62dd8b55d93f8ca719b3f5c5a703dd4&chksm=904a9b8ca73d129a9aafc350a16a8aa3e503a0e3d7d83cf12157584d3dd54987c5da8e23ffdc&mpshare=1&scene=2&srcid=&sharer_sharetime=1589357530719&sharer_shareid=fc2ac64b539199b1ffd7d5942fb8d736&from=timeline#rd)
 
-# Greenplum 博文推荐
+## Greenplum 博文推荐
 
 [Greenplum Resource Group 资源组管理实用指南](https://cn.greenplum.org/greenplum-resource-group-guide/)
 
 [Greenplum 是如何实现更新分片键的?](https://cn.greenplum.org/greenplum-split-update/)
 
-# Hudi 博文推荐
+## Hudi 博文推荐
 
 [基于Apache Hudi的多库多表实时入湖最佳实践](https://mp.weixin.qq.com/s/1WkzdrAH4MB5XS1Dp6FivA)
 
@@ -321,7 +318,7 @@ by 云邪 @ 阿里 文章: https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视
 
 [Apache Hudi 0.12.0版本重磅发布！](https://mp.weixin.qq.com/s/M09TkcojE2uHplMEiiSOnA)
 
-# Kubernetes 博文推荐
+## Kubernetes 博文推荐
 
 [Kubernetes Handbook——Kubernetes 中文指南/云原生应用架构实战手册](https://jimmysong.io/kubernetes-handbook/)
 
@@ -337,7 +334,7 @@ by 云邪 @ 阿里 文章: https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视
 
 [大数据平台Docker应用之路](https://blog.csdn.net/xgjianstart/article/details/54943531)
 
-# Pulsar 博文推荐
+## Pulsar 博文推荐
 
 [TGIP-CN 直播合集](https://www.bilibili.com/video/BV1T741147B6?from=search&seid=2966619854114248106)
 
@@ -362,10 +359,10 @@ by 云邪 @ 阿里 文章: https://mp.weixin.qq.com/s/QNJlacBUlkMT7ksKKSNa5Q 视
 [互动连线｜Topic 与 Broker 之间的秘密](https://mp.weixin.qq.com/s?__biz=MzUxOTc4NDc2MQ==&mid=2247485035&idx=1&sn=da658fc04c9d3ff410c44cabd87f2adc&source=41#wechat_redirect)
 
 
-# SeaTunnel 博文推荐
+## SeaTunnel 博文推荐
 
 [百亿级数据同步，如何基于 SeaTunnel 的 ClickHouse 实现？](https://mp.weixin.qq.com/s/nrns7BYktyZR3tNawvMNTg)
 
-# StreamPark 博文推荐
+## StreamPark 博文推荐
 
 [StreamX 1.2.3 正式发布，诸多更新重磅来袭](https://mp.weixin.qq.com/s/K3X4ItucvUoUFCpeJNa9_g)

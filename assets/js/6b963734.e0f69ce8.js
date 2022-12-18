@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbigdata_blog=self.webpackChunkbigdata_blog||[]).push([[4306],{6094:a=>{a.exports=JSON.parse('{"label":"Linux","permalink":"/Bigdata_Blog_Website/blog/tags/linux","allTagsPath":"/Bigdata_Blog_Website/blog/tags","count":1}')}}]);

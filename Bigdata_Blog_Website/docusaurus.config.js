@@ -97,8 +97,8 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/docs/overview', label: 'Note', position: 'left'},
-          {to: '/document/blog recommend', label: 'Blog recommendation', position: 'left'},
+          {to: '/docs/overview', label: 'Home Page', position: 'left'},
+          {to: '/Note/blog recommend', label: 'Note', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/SophiaData/Bigdata_Blog_Website',

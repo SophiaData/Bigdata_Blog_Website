@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Framework learning
+# 框架学习
 
 Official courses and training courses of various frameworks
 

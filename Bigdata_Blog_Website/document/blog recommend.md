@@ -197,6 +197,8 @@
 
 ## Flink
 
+[Flink实时告警系统开发](https://mp.weixin.qq.com/s/pusgYp9TzPHSSAFPVhcbxQ)
+
 [官宣 Apache Flink 1.15 发布公告](https://mp.weixin.qq.com/s/Wza0etwPtXVm5SZ1a9kJlA)
 
 ## Flink CDC 

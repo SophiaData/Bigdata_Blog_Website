@@ -29,6 +29,8 @@
 
 [Dinky 扩展 Flink Redis 的实践分享](https://mp.weixin.qq.com/s/MDw1beO6cSoAQIZBIqP-Pg)
 
+[尚硅谷Dinky视频教程](https://www.bilibili.com/video/BV1SX4y1Y7CB)
+
 
 ## Doris
 
